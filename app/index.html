@@ -14,6 +14,81 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div
+          class="header__top d-flex justify-content-between align-items-center"
+        >
+          <a class="logo col-4 col-xl-3" href="index.html">
+            <img class="logo__img" src="images/logo.svg" alt="Logo" />
+          </a>
+          <button class="header__top-callback d-lg-flex d-none" type="button">
+            Заказать обратный звонок
+          </button>
+          <a
+            class="phone-number header__top-phone d-lg-flex d-none justify-content-center justify-content-xl-end col-4"
+            href="tel:+74996476347"
+            ><span class="phone-number__text header__top-phone-text"
+              >+7 (499) 647-63-47</span
+            >
+          </a>
+          <button class="mobile-button d-xl-none d-block" type="button">
+            <span class="mobile-button__line"></span>
+            <span class="mobile-button__line"></span>
+          </button>
+          <div class="menu__overlay"></div>
+        </div>
+        <div class="header__bottom">
+          <button class="close-btn" type="button"></button>
+          <div
+            class="header__bottom-wrapper d-flex justify-content-xl-between justify-content-start align-items-xl-center align-items-start flex-column flex-xl-row"
+          >
+            <nav class="menu d-flex align-items-center">
+              <ul class="menu-list d-flex flex-column flex-xl-row">
+                <li class="menu-list__item">
+                  <a class="menu-list__link" href="#">Главная</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link" href="#">Штукатурка фасадов</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link" href="#">Галерея</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link" href="#">Карта объектов</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link" href="#">Информация</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link" href="#">О компании</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link" href="#">Контакты</a>
+                </li>
+                <li class="menu-list__item d-flex d-lg-none">
+                  <a
+                    class="phone-number header__top-phone d-flex"
+                    href="tel:+74996476347"
+                    ><span class="phone-number__text header__top-phone-text"
+                      >+7 (499) 647-63-47</span
+                    >
+                  </a>
+                </li>
+                <li class="menu-list__item d-flex d-lg-none">
+                  <button class="header__top-callback" type="button">
+                    Заказать обратный звонок
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <a class="calculator-btn d-flex" href="#">
+              <span class="calculator-btn__text">Калькулятор</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
     <script src="js/main.min.js"></script>
   </body>
 </html>

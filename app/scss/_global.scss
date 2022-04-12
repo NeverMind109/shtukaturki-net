@@ -52,3 +52,89 @@ body {
   padding: 100px 0;
   background: #e7f2f9;
 }
+.phone-number {
+  &__text {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    padding-left: 42px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      background: url("../images/phone-icon.svg") no-repeat;
+      top: -1px;
+      left: 0px;
+    }
+  }
+  &:hover {
+    color: #000;
+  }
+}
+.calculator-btn {
+  position: relative;
+  padding: 10px 10px 10px 40px;
+  background: #bcd249;
+  border-radius: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: url("../images/calculator-signs-icon.svg") no-repeat;
+    left: 10px;
+    top: 4px;
+  }
+  &__text {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #254152;
+    margin-left: 4px;
+  }
+}
+.close-btn {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  line-height: 0;
+  top: 20px;
+  left: 40%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 30;
+  &::before {
+    width: 4px;
+    height: 35px;
+  }
+  &::after {
+    width: 35px;
+    height: 4px;
+  }
+  &--active {
+    display: flex;
+    transition: all 0.01s;
+  }
+}
+.close-btn:before,
+.close-btn:after {
+  content: "";
+  position: absolute;
+  transition: background 0.3s ease 0s;
+  background-color: #fff;
+  border-radius: 4px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
