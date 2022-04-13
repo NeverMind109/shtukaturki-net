@@ -44,8 +44,22 @@
   .calculator-btn {
     margin-bottom: 25px;
   }
+  .figures {
+    &__column {
+      text-align: center;
+    }
+  }
 }
 @include media-breakpoint-down(lg) {
+  .header {
+    &__top {
+      padding: 20px 0;
+      border: none;
+    }
+  }
+  .hero {
+    padding: 0 0 80px;
+  }
   .footer {
     &__social {
       margin-bottom: 80px;
@@ -96,6 +110,61 @@
       display: none;
     }
   }
+  .hero {
+    &__slider {
+      border-radius: 0;
+    }
+    &__slide {
+      position: relative;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        );
+      }
+    }
+    &__slide-wrapper {
+      width: 100%;
+      top: 100px;
+      left: 0;
+      text-align: left;
+    }
+    &__slide-title {
+      width: 100%;
+      font-size: 30px;
+      line-height: 35px;
+      word-wrap: break-word;
+      margin-bottom: 10px;
+    }
+    &__slide-text {
+      width: 100%;
+      font-size: 16px;
+      line-height: 22px;
+      word-wrap: break-word;
+    }
+  }
+  .figures {
+    &__title {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__value {
+      font-size: 64px;
+      line-height: 77px;
+      margin-bottom: 0;
+    }
+  }
 }
 @include media-breakpoint-down(sm) {
   .header {
@@ -103,6 +172,14 @@
       &--active {
         padding: 20px 0 25px 20px;
       }
+    }
+  }
+  .hero {
+    &__slide-img {
+      height: 381px;
+    }
+    &__slide-wrapper {
+      top: 20%;
     }
   }
   .footer {

@@ -1,0 +1,93 @@
+.hero {
+  padding: 40px 0 100px;
+  &__slider {
+    max-width: 1300px;
+    background: url("../images/hero-img-bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  &__slide {
+    position: relative;
+  }
+  &__slide-img {
+    max-width: 100%;
+  }
+  &__slide-wrapper {
+    position: absolute;
+    top: 149px;
+    left: 70px;
+    margin: 0 auto;
+  }
+  &__slide-title {
+    width: 800px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #254152;
+    margin-bottom: 20px;
+  }
+  &__slide-text {
+    width: 560px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #254152;
+  }
+  .slick-dots {
+    bottom: -28px;
+  }
+  .slick-dots li button:before {
+    content: "";
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background: #c4c4c4;
+    border-radius: 999px;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: #2da6dd;
+  }
+}
+.figures {
+  padding-top: 80px;
+  &__information {
+    margin-bottom: 80px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__text {
+    max-width: 690px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+  &__columns {
+    margin: 0;
+  }
+  &__column {
+    margin-bottom: 40px;
+  }
+  &__value {
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+}

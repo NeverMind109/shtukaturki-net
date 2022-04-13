@@ -21,4 +21,14 @@ $(function () {
     menuClose(overlay);
     menuClose(closeButton);
   });
+
+  $(".hero__slider").slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    lazyLoad: "ondemand",
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
 });
