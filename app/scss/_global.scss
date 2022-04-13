@@ -43,10 +43,19 @@ body {
   overflow-x: hidden;
 }
 .section-title {
+  width: 960px;
   font-weight: 700;
   font-size: 38px;
   line-height: 45px;
   text-transform: uppercase;
+  word-wrap: break-word;
+  padding-bottom: 10px;
+}
+.section-text {
+  width: 690px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
 }
 .colored-section {
   padding: 100px 0;
@@ -137,6 +146,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
+}
+.figures {
+  padding-top: 80px;
+}
+.advantages {
+  background: #e7f2f9;
+  padding: 100px 0 60px;
 }
 .vkontakte {
   width: 20px;

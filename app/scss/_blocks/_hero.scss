@@ -56,38 +56,3 @@
     background: #2da6dd;
   }
 }
-.figures {
-  padding-top: 80px;
-  &__information {
-    margin-bottom: 80px;
-  }
-  &__title {
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 45px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  &__text {
-    max-width: 690px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-  }
-  &__columns {
-    margin: 0;
-  }
-  &__column {
-    margin-bottom: 40px;
-  }
-  &__value {
-    font-size: 72px;
-    line-height: 86px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  &__description {
-    font-weight: 400;
-    letter-spacing: 0.02em;
-  }
-}

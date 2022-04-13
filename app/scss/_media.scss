@@ -44,13 +44,19 @@
   .calculator-btn {
     margin-bottom: 25px;
   }
-  .figures {
-    &__column {
+  .details {
+    &__description {
       text-align: center;
     }
   }
 }
 @include media-breakpoint-down(lg) {
+  .section-title {
+    width: 100%;
+  }
+  .section-text {
+    width: 100%;
+  }
   .header {
     &__top {
       padding: 20px 0;
@@ -59,6 +65,15 @@
   }
   .hero {
     padding: 0 0 80px;
+  }
+  .video-review {
+    &__video {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    &__description {
+      padding: 0;
+    }
   }
   .footer {
     &__social {
@@ -150,19 +165,34 @@
       word-wrap: break-word;
     }
   }
-  .figures {
+  .details {
     &__title {
       font-size: 30px;
       line-height: 35px;
       margin-bottom: 10px;
     }
-    &__text {
-      max-width: 100%;
+    &__information {
+      margin-bottom: 60px;
     }
     &__value {
       font-size: 64px;
       line-height: 77px;
       margin-bottom: 0;
+    }
+  }
+  .advantages {
+    &__title {
+      padding-bottom: 20px;
+    }
+  }
+  .video-review {
+    padding: 80px 0;
+    &__information {
+      margin-bottom: 60px;
+    }
+    &__video {
+      width: 100%;
+      height: 300px;
     }
   }
 }
@@ -180,6 +210,11 @@
     }
     &__slide-wrapper {
       top: 20%;
+    }
+  }
+  .video-review {
+    &__video {
+      height: 200px;
     }
   }
   .footer {

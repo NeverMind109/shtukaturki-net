@@ -1,0 +1,42 @@
+.video-review {
+  padding: 140px 0;
+  &__information {
+    margin-bottom: 87px;
+  }
+  &__title {
+    padding-bottom: 20px;
+  }
+  &__wrapper {
+    margin: 0;
+  }
+  &__video {
+    padding-left: 0;
+    border-radius: 20px;
+  }
+  &__description {
+    padding-right: 0;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+  &__about {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #2da6dd;
+    &:hover {
+      color: #2da6dd;
+    }
+  }
+}
