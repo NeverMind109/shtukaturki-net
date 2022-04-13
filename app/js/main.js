@@ -1,7 +1,7 @@
 $(function () {
   $(".mobile-button").on("click", function () {
     $(".header__bottom-wrapper").toggleClass("header__bottom-wrapper--active");
-    $(".menu__overlay").toggleClass("menu__overlay--active");
+    $(".menu-overlay").toggleClass("menu-overlay--active");
     $("body").toggleClass("overflow--hidden");
     $(".close-btn").toggleClass("close-btn--active");
 
@@ -10,13 +10,13 @@ $(function () {
         $(".header__bottom-wrapper").removeClass(
           "header__bottom-wrapper--active"
         );
-        $(".menu__overlay").removeClass("menu__overlay--active");
+        $(".menu-overlay").removeClass("menu-overlay--active");
         $("body").removeClass("overflow--hidden");
         $(".close-btn").removeClass("close-btn--active");
       });
     }
 
-    let overlay = $(".menu__overlay");
+    let overlay = $(".menu-overlay");
     let closeButton = $(".close-btn");
     menuClose(overlay);
     menuClose(closeButton);

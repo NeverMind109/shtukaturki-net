@@ -47,7 +47,7 @@
   }
 }
 .menu {
-  &__overlay {
+  &-overlay {
     display: none;
     transition: all 0.3s;
     &--active {

@@ -138,3 +138,18 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
+.vkontakte {
+  width: 20px;
+  height: 12px;
+  background: url("../images/vk-icon.svg") no-repeat;
+}
+.telegram {
+  width: 20px;
+  height: 17px;
+  background: url("../images/telegram-icon.svg") no-repeat;
+}
+.instagram {
+  width: 20px;
+  height: 20px;
+  background: url("../images/instagram-icon.svg") no-repeat;
+}
