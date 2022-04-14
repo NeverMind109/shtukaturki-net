@@ -49,6 +49,14 @@
       text-align: center;
     }
   }
+  .consult {
+    &__title {
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
+    }
+  }
 }
 @include media-breakpoint-down(lg) {
   .section-title {
@@ -104,6 +112,15 @@
     }
     &__navigation {
       margin-bottom: 80px;
+    }
+  }
+  .consult {
+    &__information {
+      padding: 0;
+      margin-bottom: 60px;
+    }
+    &__form {
+      padding: 0;
     }
   }
 }
