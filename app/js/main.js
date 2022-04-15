@@ -32,6 +32,44 @@ $(function () {
     slidesToScroll: 1,
   });
 
+  $(".materials__slider").slick({
+    dots: true,
+    infinite: true,
+    prevArrow:
+      '<button class="materials__slider-btn materials__slider-prev" type="button"><img src="images/materials-slider-icon-prev.svg" alt="Previous Slide Button" width="8" height="30" class="materials__slider-img"></button>',
+    nextArrow:
+      '<button class="materials__slider-btn materials__slider-next" type="button"><img src="images/materials-slider-icon-next.svg" alt="Next Slide Button" width="8" height="30" class="materials__slider-img"></button>',
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  });
+
   const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
     Dots: false,
   });
