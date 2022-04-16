@@ -180,6 +180,17 @@
       margin-bottom: 60px;
     }
   }
+  .our-instagram {
+    &__information {
+      margin-bottom: 60px;
+    }
+  }
+  .equipment {
+    padding: 80px 0 0;
+    &__information {
+      margin-bottom: 60px;
+    }
+  }
   .footer {
     &__social {
       margin-bottom: 80px;
@@ -369,6 +380,11 @@
     }
     &__slider-next {
       right: 10%;
+    }
+  }
+  .equipment {
+    &__img {
+      max-width: 100%;
     }
   }
   .footer {
