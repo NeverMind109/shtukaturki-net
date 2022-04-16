@@ -45,6 +45,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #254152;
+    word-wrap: break-word;
   }
   &__more {
     font-size: 16px;
@@ -52,5 +53,8 @@
     letter-spacing: 0.02em;
     text-decoration-line: underline;
     color: #2da6dd;
+    &:hover {
+      color: #2da6dd;
+    }
   }
 }
