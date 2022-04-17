@@ -28,6 +28,11 @@
       }
     }
   }
+  .articles {
+    &__card {
+      width: 330px;
+    }
+  }
 }
 @include media-breakpoint-down(xl) {
   .header {
@@ -115,6 +120,11 @@
   }
   .calculator {
     &__included-list {
+      width: 300px;
+    }
+  }
+  .articles {
+    &__card {
       width: 300px;
     }
   }
@@ -230,6 +240,26 @@
         align-items: center;
         justify-content: center;
       }
+    }
+  }
+  .articles {
+    &__card {
+      width: 100%;
+    }
+    &__img {
+      border-radius: 20px 0px 0px 20px;
+    }
+    &__inner {
+      border-radius: 0px 20px 20px 0px;
+    }
+    &__body {
+      padding: 0 40px 0;
+    }
+    &__description {
+      margin-bottom: 18px;
+    }
+    &__footer {
+      padding: 0 40px 10px;
     }
   }
   .footer {
@@ -400,6 +430,25 @@
     }
     &__included-description {
       padding: 0;
+    }
+  }
+  .articles {
+    padding: 80px 0 60px;
+    &__img {
+      width: 100%;
+      border-radius: 20px 20px 0px 0px;
+    }
+    &__inner {
+      border-radius: 0px 0px 20px 20px;
+    }
+    &__body {
+      padding: 40px 40px 0;
+    }
+    &__description {
+      margin-bottom: 28px;
+    }
+    &__footer {
+      padding: 0 40px 40px;
     }
   }
 }

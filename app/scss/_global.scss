@@ -61,6 +61,16 @@ body {
   padding: 100px 0;
   background: #e7f2f9;
 }
+.link {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #2da6dd;
+  color: #2da6dd;
+  &:hover {
+    color: #2da6dd;
+  }
+}
 .phone-number {
   &__text {
     display: inline-block;

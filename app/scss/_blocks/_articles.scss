@@ -1,0 +1,48 @@
+.articles {
+  padding: 140px 0 80px;
+  &__information {
+    margin-bottom: 80px;
+  }
+  &__title {
+    padding-bottom: 20px;
+  }
+  &__wrapper {
+    margin: 0;
+  }
+  &__card {
+    width: 360px;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  &__img {
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  &__inner {
+    background-color: #e7f2f9;
+    border-radius: 0px 0px 20px 20px;
+  }
+  &__body {
+    padding: 40px 40px 0;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    word-wrap: break-word;
+    margin-bottom: 28px;
+  }
+  &__footer {
+    padding: 0 40px 40px;
+  }
+}
