@@ -1,0 +1,268 @@
+.calculator {
+  &__information {
+    margin-bottom: 80px;
+  }
+  &__title {
+    padding-bottom: 20px;
+  }
+  &__wrapper {
+    margin: 0;
+  }
+  &__calculate {
+    max-width: 760px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 60px 60px 66px 40px;
+  }
+  &__area {
+    margin-bottom: 65px;
+    .irs-min,
+    .irs-max {
+      &::after {
+        content: "м2";
+        margin-left: 5px;
+      }
+    }
+  }
+  &__thickness {
+    margin-bottom: 40px;
+    .irs-min,
+    .irs-max {
+      &::after {
+        content: "мм";
+        margin-left: 5px;
+      }
+    }
+  }
+  &__input {
+    width: 460px;
+    margin-right: 60px;
+  }
+  &__heading {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+  &__value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 60px;
+    background: #ffffff;
+    border: 2px solid #254152;
+    border-radius: 999px;
+    margin-top: 35px;
+  }
+  &__value-text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+  }
+  &__value-figure {
+    margin-right: 7px;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__checkbox-input {
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    border: 2px solid #254152;
+    border-radius: 999px;
+    box-shadow: none;
+    overflow: visible;
+    margin: 0 24px 0 0;
+  }
+  &__result {
+    max-width: 360px;
+    background: #254152;
+    border-radius: 20px;
+    padding: 60px 40px;
+    color: #ffffff;
+  }
+  &__result-heading {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+  }
+  &__result-description {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 10px;
+  }
+  &__result-price {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+  }
+  &__result-btn {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 20px 50px;
+    background: #2da6dd;
+    border: none;
+    border-radius: 999px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  &__result-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  &__included-title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: -34px 0 40px;
+  }
+  &__included-wrapper {
+    height: 100%;
+  }
+  &__included-list {
+    width: 360px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 10px 30px 30px;
+  }
+  &__included-item {
+    position: relative;
+    padding-left: 31px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #2da6dd;
+      border-radius: 999px;
+      top: 0;
+      left: 0;
+    }
+    &:first-child {
+      padding: 0;
+      margin: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  &__included-heading-first {
+    display: block;
+    position: relative;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    padding: 19px 0 19px 104px;
+    margin-bottom: 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 52px;
+      height: 61px;
+      background: url("../images/materials-icon-1.svg") no-repeat;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__included-heading-second {
+    display: block;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    padding: 19px 0 19px 104px;
+    margin-bottom: 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 61px;
+      background: url("../images/materials-icon-2.svg") no-repeat;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__included-description {
+    display: block;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  .jq-checkbox.focused {
+    border: 2px solid #254152;
+  }
+  .jq-checkbox.checked .jq-checkbox__div {
+    width: 16px;
+    height: 10px;
+    margin: 11px 8px;
+    background: url("../images/check-icon.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transform: rotate(0);
+  }
+  .irs--flat .irs-line {
+    height: 6px;
+    background: rgba(37, 65, 82, 0.2);
+    border-radius: 10px;
+  }
+  .irs--flat .irs-bar {
+    height: 6px;
+    background: #254152;
+  }
+  .irs--flat .irs-handle {
+    i {
+      top: -4px;
+      width: 20px;
+      height: 20px;
+      background: #254152;
+      border-radius: 999px;
+    }
+  }
+  .irs--flat .irs-from,
+  .irs--flat .irs-to,
+  .irs--flat .irs-single {
+    visibility: hidden;
+  }
+  .irs-handle:hover > i:first-child {
+    background-color: #254152;
+  }
+  .irs--flat .irs-handle.state_hover > i:first-child,
+  .irs--flat .irs-handle:hover > i:first-child {
+    background-color: #254152;
+  }
+  .irs--flat .irs-min,
+  .irs--flat .irs-max {
+    font-family: "Montserrat", sans-serif;
+    top: 50px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #254152;
+    background-color: transparent;
+  }
+  .irs-min,
+  .irs-max {
+    visibility: visible !important;
+  }
+}

@@ -18,8 +18,10 @@ $(function () {
 
     let overlay = $(".menu-overlay");
     let closeButton = $(".close-btn");
+    let calculatorBtn = $(".calculator-btn");
     menuClose(overlay);
     menuClose(closeButton);
+    menuClose(calculatorBtn);
   });
 
   $(".hero__slider").slick({
@@ -97,4 +99,22 @@ $(function () {
       },
     },
   });
+
+  $(".js-range-slider").ionRangeSlider();
+  $(".input-styled").styler();
+
+  $("a.scroll-to").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor).offset().top - 0,
+        },
+        200
+      );
+  });
+
+  // console.log($(".calculator__area .irs-single").html());
 });

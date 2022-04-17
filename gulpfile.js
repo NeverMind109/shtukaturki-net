@@ -43,6 +43,8 @@ function libscss() {
     "node_modules/animate.css/animate.css",
     "node_modules/ion-rangeslider/css/ion.rangeSlider.css",
     "node_modules/@fancyapps/ui/dist/fancybox.css",
+    "node_modules/jquery-form-styler/dist/jquery.formstyler.css",
+    "node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",
   ])
     .pipe(concat("_libs.scss"))
     .pipe(
@@ -63,6 +65,7 @@ function scripts() {
     "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
     "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
     "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
+    "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
     "app/js/main.js",
   ])
     .pipe(concat("main.min.js"))
