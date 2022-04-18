@@ -1,0 +1,48 @@
+.map {
+  padding: 40px 0 0;
+  &__information {
+    margin-bottom: 30px;
+  }
+  &__title {
+    padding-bottom: 20px;
+  }
+  &__markers {
+    margin-bottom: 65px;
+  }
+  &__marker {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  &__marker-description {
+    margin-left: 13px;
+  }
+  &__image {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__mark {
+    position: absolute;
+  }
+  &__mark-first {
+    top: 39%;
+    left: 44%;
+  }
+  &__mark-second {
+    top: 24%;
+    right: 35%;
+  }
+  &__mark-third {
+    top: 56%;
+    right: 37%;
+  }
+  &__mark-fourth {
+    top: 66%;
+    right: 24%;
+  }
+}

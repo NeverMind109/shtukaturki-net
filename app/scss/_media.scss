@@ -296,6 +296,11 @@
   .gallery {
     padding: 10px 0 80px;
   }
+  .map {
+    &__img {
+      height: 350px;
+    }
+  }
   .footer {
     &__social {
       margin-bottom: 80px;
@@ -492,6 +497,21 @@
     &__content-text {
       font-size: 16px;
       line-height: 22px;
+    }
+  }
+  .map {
+    padding: 10px 0 0;
+    &__information {
+      margin-bottom: 40px;
+    }
+    &__markers {
+      margin-bottom: 40px;
+    }
+    &__marker {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
     }
   }
 }
