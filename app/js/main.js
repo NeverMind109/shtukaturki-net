@@ -24,11 +24,19 @@ $(function () {
     menuClose(calculatorBtn);
   });
 
+  $(".gallery__tab").on("click", function (e) {
+    e.preventDefault();
+    $(".gallery__tab").removeClass("gallery__tab--active");
+    $(this).addClass("gallery__tab--active");
+
+    $(".gallery__tabs-content").removeClass("gallery__tabs-content--active");
+    $($(this).attr("href")).addClass("gallery__tabs-content--active");
+  });
+
   $(".hero__slider").slick({
     dots: true,
     infinite: true,
     arrows: false,
-    lazyLoad: "ondemand",
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -115,6 +123,5 @@ $(function () {
         200
       );
   });
-
   // console.log($(".calculator__area .irs-single").html());
 });
