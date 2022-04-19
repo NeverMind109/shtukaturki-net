@@ -1,0 +1,90 @@
+.contacts {
+  padding: 40px 0 0;
+  &__information {
+    margin-bottom: 80px;
+  }
+  &__title {
+    padding-bottom: 20px;
+  }
+  &__text {
+    max-width: 450px;
+  }
+  &__body {
+    margin-bottom: 81px;
+  }
+  &__work-time {
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    padding-left: 64px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      background: url("../images/time-icon.svg") no-repeat;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  &__heading {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__item {
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    padding-left: 55px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__item-phone {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      background: url("../images/phone-icon.svg") no-repeat;
+      top: -1px;
+      left: 0px;
+    }
+  }
+  &__item-location {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: url("../images/location-mark-icon.svg") no-repeat;
+      top: -5px;
+      left: 0px;
+    }
+  }
+  &__item-email {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 17px;
+      background: url("../images/email-icon.svg") no-repeat;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  &__item-address {
+    line-height: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background: url("../images/information-icon.svg") no-repeat;
+      top: 0px;
+      left: 0px;
+    }
+  }
+}
