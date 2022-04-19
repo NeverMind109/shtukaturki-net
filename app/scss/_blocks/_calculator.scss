@@ -75,6 +75,7 @@
     cursor: pointer;
   }
   &__checkbox-input {
+    flex-shrink: 0;
     width: 36px;
     height: 36px;
     background: #ffffff;
