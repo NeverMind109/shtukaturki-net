@@ -275,6 +275,9 @@
   }
   .extended {
     padding: 10px 0 40px;
+    &-article {
+      padding: 10px 0 80px;
+    }
     &__information {
       margin-bottom: 60px;
     }

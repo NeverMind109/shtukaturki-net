@@ -22,6 +22,11 @@
     border-radius: 10px;
     padding: 0;
     margin-bottom: 40px;
+    &:hover {
+      .gallery__tabs-card-text {
+        color: #254152;
+      }
+    }
   }
   &__tabs-card-wrapper {
     height: 100%;

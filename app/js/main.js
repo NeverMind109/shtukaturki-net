@@ -123,5 +123,4 @@ $(function () {
         200
       );
   });
-  // console.log($(".calculator__area .irs-single").html());
 });
