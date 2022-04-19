@@ -588,57 +588,57 @@
             </p>
           </div>
           <div
-            class="row calculator__wrapper d-flex flex-column flex-lg-row align-items-start justify-content-between"
+            class="row calculator__wrapper d-flex flex-column flex-lg-row align-items-stretch justify-content-between"
           >
-            <div class="calculator__calculate col-8">
-              <div
-                class="calculator__line calculator__area d-flex flex-column flex-md-row"
-              >
-                <div class="calculator__input">
-                  <span class="calculator__heading">Площадь стен</span>
-                  <input
-                    class="js-range-slider calculator__range"
-                    type="text"
-                    data-from="1400"
-                    data-min="200"
-                    data-max="3000"
-                  />
-                </div>
-                <div class="calculator__value">
-                  <span class="calculator__value-text"
-                    ><span class="calculator__value-figure">1400</span>м2</span
-                  >
-                </div>
-              </div>
-              <div
-                class="calculator__line calculator__thickness d-flex flex-column flex-md-row"
-              >
-                <div class="calculator__input">
-                  <span class="calculator__heading">Толщина слоя</span>
-                  <input
-                    class="js-range-slider calculator__range"
-                    type="text"
-                    data-from="24"
-                    data-min="10"
-                    data-max="30"
-                  />
-                </div>
-                <div class="calculator__value">
-                  <span class="calculator__value-text"
-                    ><span class="calculator__value-figure">24</span>мм</span
-                  >
-                </div>
-              </div>
-              <div class="calculator__checkbox">
-                <label class="calculator__label" for="calculator-checkbox"
-                  ><input
-                    class="input-styled calculator__checkbox-input"
-                    type="checkbox"
-                    id="calculator-checkbox"
-                    checked
-                  />Включить стоимость материалов</label
+            <div
+              class="calculator__calculate d-flex flex-column justify-content-between col-8"
+            >
+              <div class="calculator__calculate-wrapper">
+                <div
+                  class="calculator__line calculator__area d-flex flex-column flex-md-row"
                 >
+                  <div class="calculator__input">
+                    <span class="calculator__heading">Площадь стен</span>
+                    <input
+                      class="js-range-slider calculator__range"
+                      type="text"
+                      data-from="1400"
+                      data-min="200"
+                      data-max="3000"
+                    />
+                  </div>
+                  <div class="calculator__value">
+                    <span class="calculator__value-text"
+                      ><span class="calculator__value-figure">1400</span
+                      >м2</span
+                    >
+                  </div>
+                </div>
+                <div class="calculator__checkbox">
+                  <label class="calculator__label" for="materials-checkbox"
+                    ><input
+                      class="input-styled calculator__checkbox-input"
+                      type="checkbox"
+                      id="materials-checkbox"
+                      checked
+                    />Включить стоимость материалов</label
+                  >
+                </div>
+                <div class="calculator__checkbox">
+                  <label class="calculator__label" for="scaffold-checkbox"
+                    ><input
+                      class="input-styled calculator__checkbox-input"
+                      type="checkbox"
+                      id="scaffold-checkbox"
+                      checked
+                    />Включить стоимость установки лесов</label
+                  >
+                </div>
               </div>
+              <span class="calculator__included-description"
+                >В стоимость работы с учётом материалов включены все расходы на
+                проведение штукатурных работ</span
+              >
             </div>
             <form
               class="calculator__result d-flex flex-column col-4"
@@ -667,53 +667,6 @@
                 итоговую стоимость.</span
               >
             </form>
-          </div>
-          <h3 class="calculator__included-title">
-            В стоимость включено абсолютно все!
-          </h3>
-          <div
-            class="row calculator__included-wrapper d-flex flex-column flex-lg-row align-items-center align-items-lg-stretch justify-content-lg-between justify-content-center"
-          >
-            <ul class="calculator__included-list col-12 col-xl-4">
-              <li class="calculator__included-item">
-                <span class="calculator__included-heading-first"
-                  >Материалы</span
-                >
-              </li>
-              <li class="calculator__included-item">Гипсовая штукатурка</li>
-              <li class="calculator__included-item">Цементатная штукатурка</li>
-              <li class="calculator__included-item">Акриловый грунт</li>
-              <li class="calculator__included-item">Бетоноконтакт</li>
-              <li class="calculator__included-item">Штукатурная сетка</li>
-              <li class="calculator__included-item">Грунт по металлу</li>
-              <li class="calculator__included-item">Штукатурные маяки</li>
-              <li class="calculator__included-item">Углозащищенные маяки</li>
-            </ul>
-            <ul class="calculator__included-list col-12 col-xl-4">
-              <li class="calculator__included-item">
-                <span class="calculator__included-heading-second"
-                  >Материалы</span
-                >
-              </li>
-              <li class="calculator__included-item">Доставка материалов</li>
-              <li class="calculator__included-item">Разгрузка материалов</li>
-              <li class="calculator__included-item">Грунтование стен</li>
-              <li class="calculator__included-item">Монтаж сетки</li>
-              <li class="calculator__included-item">Установка маяков</li>
-              <li class="calculator__included-item">Штукатурка стен</li>
-              <li class="calculator__included-item">Глянцевание стен</li>
-              <li class="calculator__included-item">Шпатлевание стен</li>
-              <li class="calculator__included-item">Уборка помещения</li>
-              <li class="calculator__included-item">
-                Загрузка строительного мусора
-              </li>
-            </ul>
-            <div class="calculator__included-list col-12 col-xl-4">
-              <span class="calculator__included-description"
-                >В стоимость работы с учётом материалов включены все расходы на
-                проведение штукатурных работ</span
-              >
-            </div>
           </div>
         </div>
       </section>

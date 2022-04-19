@@ -301,6 +301,30 @@
       height: 350px;
     }
   }
+  .about {
+    padding: 10px 0 80px;
+    &__information {
+      margin-bottom: 60px;
+    }
+    &__body {
+      margin: 0 0 80px;
+    }
+    &__image {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    &__text-block {
+      padding: 0;
+    }
+    &__heading {
+      margin-bottom: 20px;
+    }
+    &__text {
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
   .footer {
     &__social {
       margin-bottom: 80px;
@@ -575,6 +599,12 @@
     &__tabs-card {
       width: 85%;
       margin-bottom: 60px;
+    }
+  }
+  .about {
+    &__img {
+      width: 290px;
+      height: 290px;
     }
   }
   .footer {
