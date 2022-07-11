@@ -2,12 +2,13 @@
   &__information {
     margin-bottom: 80px;
   }
-  &__columns {
-    margin: 0;
+  .col {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
   &__column {
     text-align: center;
-    margin-bottom: 40px;
   }
   &__img {
     margin: 0 auto 40px;
@@ -25,7 +26,6 @@
   }
   &__description {
     font-weight: 400;
-    text-align: left;
     letter-spacing: 0.02em;
   }
   &__about {

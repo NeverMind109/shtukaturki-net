@@ -1,6 +1,6 @@
 @import "_vars.scss";
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "_libs.scss";
+@import "_bootstrap-grid.scss";
 @import "_fonts.scss";
 @import "_global.scss";
 @import "_blocks/_header.scss";
@@ -13,6 +13,7 @@
 @import "_blocks/_materials.scss";
 @import "_blocks/_process.scss";
 @import "_blocks/_route.scss";
+@import "_blocks/_our-instagram.scss";
 @import "_blocks/_equipment.scss";
 @import "_blocks/_calculator.scss";
 @import "_blocks/_articles.scss";

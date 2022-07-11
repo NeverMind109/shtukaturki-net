@@ -32,7 +32,11 @@
               >+7 (499) 647-63-47</span
             >
           </a>
-          <button class="mobile-button d-xl-none d-block" type="button">
+          <button
+            class="mobile-button d-xl-none d-block"
+            type="button"
+            aria-label="Кнопка мобильного меню"
+          >
             <span class="mobile-button__line"></span>
             <span class="mobile-button__line"></span>
           </button>
@@ -94,7 +98,7 @@
     <main class="content">
       <section class="map">
         <div class="container">
-          <div class="map__information col-lg-6 col-12">
+          <div class="map__information">
             <h2 class="section-title map__title">Карта объектов</h2>
             <p class="section-text map__text">
               С грамотно выполненной фасадной отделкой дом может простоять
@@ -112,73 +116,49 @@
             </div>
           </div>
         </div>
-        <div class="map__image">
-          <img
-            class="map__img d-flex d-sm-none"
-            src="images/map-img-mobile.jpg"
-            alt=""
-            width="414"
-            height="300"
-          />
-          <img
-            class="map__img d-none d-sm-flex"
-            src="images/map-img.jpg"
-            alt=""
-            width="1440"
-            height="664"
-          />
-          <div
-            class="map__mark finished-icon map__mark-first d-none d-sm-flex"
-          ></div>
-          <div
-            class="map__mark current-icon map__mark-second d-none d-sm-flex"
-          ></div>
-          <div
-            class="map__mark current-icon map__mark-third d-none d-sm-flex"
-          ></div>
-          <div
-            class="map__mark finished-icon map__mark-fourth d-none d-sm-flex"
-          ></div>
-        </div>
+        <div class="map__plane" id="mapForObjects"></div>
       </section>
       <section class="colored-section consult">
         <div class="container">
           <div class="row consult__wrapper flex-column flex-lg-row">
-            <div class="consult__information col-lg-6 col-12">
-              <h2 class="section-title consult__title">
-                Убедитесь в качестве выполненных работ
-              </h2>
-              <p class="section-text consult__text">
-                Вы можете посмотреть процесс выполнения и качество штукатурных
-                работ приехав на любой из наших объектов просто оставьте свои
-                контактные данные и с вами свяжет са наш менеджер
-              </p>
+            <div class="col-lg-6 col-12">
+              <div class="consult__information">
+                <h2 class="section-title consult__title">
+                  Получи бесплатную консультацию
+                </h2>
+                <p class="section-text consult__text">
+                  Просто оставьте свои контактные данные и наши специалисты
+                  проконсультируют вас по любому вопросу
+                </p>
+              </div>
             </div>
-            <form
-              class="consult__form d-flex flex-column align-items-start col-lg-6 col-12"
-              action="#"
-            >
-              <input
-                class="consult__input consult__name"
-                type="text"
-                placeholder="Ваше имя"
-                required
-              />
-              <input
-                class="consult__input consult__phone"
-                type="tel"
-                placeholder="+7 (999) 999 99 99"
-                required
-              />
-              <button class="consult__btn" type="submit">Отправить</button>
-              <span class="consult__notice-text"
-                >Отправляя заявку вы даете согласие на<a
-                  href="#"
-                  class="consult__notice-link"
-                  >обработку своих персональных данных</a
-                ></span
+            <div class="col-lg-6 col-12">
+              <form
+                class="consult__form d-flex flex-column align-items-start"
+                action="#"
               >
-            </form>
+                <input
+                  class="consult__input consult__name"
+                  type="text"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  class="consult__input consult__phone"
+                  type="tel"
+                  placeholder="+7 (999) 999 99 99"
+                  required
+                />
+                <button class="consult__btn" type="submit">Отправить</button>
+                <span class="consult__notice-text"
+                  >Отправляя заявку вы даете согласие на<a
+                    href="#"
+                    class="consult__notice-link"
+                    >обработку своих персональных данных</a
+                  ></span
+                >
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -196,13 +176,28 @@
             </a>
             <ul class="social footer__social d-flex align-items-center">
               <li class="social__item">
-                <a class="social__item-link vkontakte" href="#"></a>
+                <a
+                  class="social__item-link vkontakte"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Вконтакте"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link telegram" href="#"></a>
+                <a
+                  class="social__item-link telegram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Telegram"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link instagram" href="#"></a>
+                <a
+                  class="social__item-link instagram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Instagram"
+                ></a>
               </li>
             </ul>
           </div>
@@ -216,13 +211,28 @@
               class="social footer__social d-none d-md-flex align-items-center"
             >
               <li class="social__item">
-                <a class="social__item-link vkontakte" href="#"></a>
+                <a
+                  class="social__item-link vkontakte"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Вконтакте"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link telegram" href="#"></a>
+                <a
+                  class="social__item-link telegram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Telegram"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link instagram" href="#"></a>
+                <a
+                  class="social__item-link instagram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Instagram"
+                ></a>
               </li>
             </ul>
             <ul class="footer__information-list">
@@ -308,6 +318,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

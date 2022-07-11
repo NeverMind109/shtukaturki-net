@@ -4,12 +4,12 @@
     margin-bottom: 60px;
   }
   &__text {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   &__list {
     flex-wrap: nowrap;
     min-height: 256px;
-    padding: 0 72px;
+    padding-left: 72px;
   }
   &__item {
     display: flex;

@@ -4,7 +4,7 @@
     margin-bottom: 80px;
   }
   &__title {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   &__text {
     max-width: 450px;
@@ -87,5 +87,10 @@
       top: 0px;
       left: 0px;
     }
+  }
+  &__map {
+    width: 1440px;
+    height: 664px;
+    margin: 0 auto;
   }
 }

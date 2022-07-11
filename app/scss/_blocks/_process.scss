@@ -3,7 +3,7 @@
     margin-bottom: 90px;
   }
   &__title {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   &__steps {
     list-style-type: none;
@@ -11,10 +11,10 @@
     margin: 0 -12px;
   }
   &__step {
-    width: 260px;
     position: relative;
     padding: 0;
-    margin: 0 15px 80px;
+    text-align: left;
+    margin: 0 auto 80px;
     &:before {
       content: counter(item) ".";
       counter-increment: item;
@@ -40,6 +40,7 @@
     margin-bottom: 40px;
   }
   &__heading {
+    max-width: 260px;
     font-size: 22px;
     line-height: 31px;
     text-align: center;

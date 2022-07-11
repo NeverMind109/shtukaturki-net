@@ -4,7 +4,7 @@
     margin-bottom: 30px;
   }
   &__title {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   &__markers {
     margin-bottom: 65px;
@@ -17,32 +17,38 @@
   &__marker-description {
     margin-left: 13px;
   }
-  &__image {
-    max-width: 1440px;
-    position: relative;
+  &__plane {
+    width: 1440px;
+    height: 664px;
     margin: 0 auto;
   }
-  &__img {
-    max-width: 100%;
-    margin: 0 auto;
+  &__balloon {
+    font-family: "Montserrat", sans-serif;
+    color: #254152;
+    padding: 20px 20px 0;
   }
-  &__mark {
-    position: absolute;
+  &__balloon-category {
+    display: inline-block;
+    font-weight: 600;
+    padding-right: 5px;
   }
-  &__mark-first {
-    top: 39%;
-    left: 44%;
+  &__balloon-address {
+    margin-bottom: 20px;
   }
-  &__mark-second {
-    top: 24%;
-    right: 35%;
+  &__balloon-info {
+    margin-bottom: 20px;
   }
-  &__mark-third {
-    top: 56%;
-    right: 37%;
+  &__balloon-finish-date {
+    margin-bottom: 20px;
   }
-  &__mark-fourth {
-    top: 66%;
-    right: 24%;
+  &__balloon-link {
+    display: inline-block;
+    color: #254152;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    &:hover {
+      color: #254152;
+      text-decoration: underline;
+    }
   }
 }

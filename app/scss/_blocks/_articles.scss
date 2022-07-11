@@ -4,19 +4,15 @@
     margin-bottom: 80px;
   }
   &__title {
-    padding-bottom: 20px;
-  }
-  &__wrapper {
-    margin: 0;
+    margin-bottom: 20px;
   }
   &__card {
-    width: 360px;
     overflow: hidden;
     padding: 0;
     margin-bottom: 60px;
   }
   &__img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
   }
   &__inner {

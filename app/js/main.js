@@ -124,3 +124,170 @@ $(function () {
       );
   });
 });
+
+// Калькулятор
+let priceForMeter = 650;
+function getSquare() {
+  let wallThickness = document.querySelector("#wallSquare").value;
+  document.querySelector("#squareRange").innerHTML = wallThickness;
+  document.querySelector("#totalPrice").innerHTML =
+    (wallThickness * priceForMeter).toLocaleString() + " руб";
+}
+
+// Яндекс карта страницы контакты
+let ekaterinburg = [56.841908, 60.597453];
+let addressOnTheMap = [56.84339, 60.590427];
+let objectPosition1 = [56.885425, 60.403406];
+let objectPosition2 = [56.948315, 60.679033];
+let objectPosition3 = [56.837642, 60.635527];
+let objectPosition4 = [56.801279, 60.806224];
+
+function initCityMap() {
+  const cityMap = new ymaps.Map("cityMap", {
+    center: ekaterinburg,
+    zoom: 11,
+  });
+  let location = new ymaps.Placemark(
+    addressOnTheMap,
+    {
+      balloonContent: `<div class="map__balloon">
+      <div class="map__balloon-address">
+        <span class="map__balloon-category">Адрес нашего офиса:</span> Lorem ipsum dolor
+      </div>
+      <div class="map__balloon-info">
+      <span class="map__balloon-category">Как к нам добаться:</span> Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Но, щеке. Его выйти рукописи парадигматическая подпоясал грамматики необходимыми грустный.
+    </div>
+      `,
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+      iconImageSize: [40, 40],
+      iconImageOffset: [0, 0],
+    }
+  );
+  cityMap.geoObjects.add(location);
+}
+ymaps.ready(initCityMap);
+
+// Яндекс карта страницы объектов
+function initMapForObjects() {
+  const mapForObjects = new ymaps.Map("mapForObjects", {
+    center: ekaterinburg,
+    zoom: 11,
+  });
+  let location = new ymaps.Placemark(
+    addressOnTheMap,
+    {
+      balloonContent: `<div class="map__balloon">
+        <div class="map__balloon-address">
+          <span class="map__balloon-category">Адрес нашего офиса:</span> Lorem ipsum dolor
+        </div>
+        <div class="map__balloon-info">
+        <span class="map__balloon-category">Как к нам добаться:</span> Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Но, щеке. Его выйти рукописи парадигматическая подпоясал грамматики необходимыми грустный.
+      </div>
+        `,
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+      iconImageSize: [40, 40],
+      iconImageOffset: [0, 0],
+    }
+  );
+
+  let objectMark1 = new ymaps.Placemark(
+    objectPosition1,
+    {
+      balloonContent: `<div class="map__balloon">
+        <div class="map__balloon-address">
+          <span class="map__balloon-category">Адрес объекта:</span> Lorem ipsum dolor
+        </div>
+        <div class="map__balloon-info">
+          <span class="map__balloon-category">Описание объекта:</span> Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Но, щеке. Его выйти рукописи парадигматическая подпоясал грамматики необходимыми грустный.
+        </div>
+        <div class="map__balloon-finish-date">
+          <span class="map__balloon-category">Дата завершения:</span> 01.01.10
+        </div>
+        <a class="map__balloon-link" href="">Подробнее</a>
+      </div>`,
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "../images/finished-object-icon.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [0, 0],
+    }
+  );
+
+  let objectMark2 = new ymaps.Placemark(
+    objectPosition2,
+    {
+      balloonContent: `<div class="map__balloon">
+        <div class="map__balloon-address">
+          <span class="map__balloon-category">Адрес объекта:</span> Lorem ipsum dolor
+        </div>
+        <div class="map__balloon-info">
+          <span class="map__balloon-category">Описание объекта:</span> Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Но, щеке. Его выйти рукописи парадигматическая подпоясал грамматики необходимыми грустный.
+        </div>
+      </div>`,
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "../images/current-object-icon.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [0, 0],
+    }
+  );
+
+  let objectMark3 = new ymaps.Placemark(
+    objectPosition3,
+    {
+      balloonContent: `<div class="map__balloon">
+        <div class="map__balloon-address">
+          <span class="map__balloon-category">Адрес объекта:</span> Lorem ipsum dolor
+        </div>
+        <div class="map__balloon-info">
+          <span class="map__balloon-category">Описание объекта:</span> Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Но, щеке. Его выйти рукописи парадигматическая подпоясал грамматики необходимыми грустный.
+        </div>
+      </div>`,
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "../images/current-object-icon.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [0, 0],
+    }
+  );
+
+  let objectMark4 = new ymaps.Placemark(
+    objectPosition4,
+    {
+      balloonContent: `<div class="map__balloon">
+        <div class="map__balloon-address">
+          <span class="map__balloon-category">Адрес объекта:</span> Lorem ipsum dolor
+        </div>
+        <div class="map__balloon-info">
+          <span class="map__balloon-category">Описание объекта:</span> Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Но, щеке. Его выйти рукописи парадигматическая подпоясал грамматики необходимыми грустный.
+        </div>
+        <div class="map__balloon-finish-date">
+          <span class="map__balloon-category">Дата завершения:</span> 01.01.12
+        </div>
+        <a class="map__balloon-link" href="">Подробнее</a>
+      </div>`,
+    },
+    {
+      iconLayout: "default#image",
+      iconImageHref: "../images/finished-object-icon.svg",
+      iconImageSize: [40, 40],
+      iconImageOffset: [0, 0],
+    }
+  );
+  mapForObjects.geoObjects.add(location);
+  mapForObjects.geoObjects.add(objectMark1);
+  mapForObjects.geoObjects.add(objectMark2);
+  mapForObjects.geoObjects.add(objectMark3);
+  mapForObjects.geoObjects.add(objectMark4);
+}
+
+ymaps.ready(initMapForObjects);

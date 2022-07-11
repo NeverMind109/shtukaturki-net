@@ -38,6 +38,7 @@ function images() {
 function libscss() {
   return src([
     "node_modules/normalize.css/normalize.css",
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
     "node_modules/slick-carousel/slick/slick.css",
     "node_modules/slick-carousel/slick/slick-theme.css",
     "node_modules/animate.css/animate.css",

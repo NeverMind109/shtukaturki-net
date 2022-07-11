@@ -3,14 +3,14 @@
     margin-bottom: 90px;
   }
   &__title {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   &__cards {
     height: 100%;
     margin: 0 -12px 93px;
   }
   &__card {
-    height: auto;
+    height: 100%;
     align-items: center;
     justify-content: space-between;
     border: none;
@@ -35,6 +35,7 @@
     word-wrap: break-word;
   }
   &__footer {
+    text-align: center;
     border: none;
     padding: 0;
     background-color: transparent;
@@ -45,9 +46,6 @@
     line-height: 53px;
     letter-spacing: 0.02em;
     color: #2da6dd;
-  }
-  &__included {
-    margin: 0;
   }
   &__included-title {
     font-weight: 700;

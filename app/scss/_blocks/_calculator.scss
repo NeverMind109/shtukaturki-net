@@ -3,13 +3,10 @@
     margin-bottom: 80px;
   }
   &__title {
-    padding-bottom: 20px;
-  }
-  &__wrapper {
-    margin: 0;
+    margin-bottom: 20px;
   }
   &__calculate {
-    max-width: 760px;
+    height: 100%;
     background: #ffffff;
     border-radius: 20px;
     padding: 60px 60px 66px 40px;
@@ -37,6 +34,9 @@
   &__input {
     width: 460px;
     margin-right: 60px;
+    .irs-handle i {
+      cursor: pointer;
+    }
   }
   &__heading {
     font-size: 18px;
@@ -86,7 +86,6 @@
     margin: 0 24px 0 0;
   }
   &__result {
-    max-width: 360px;
     background: #254152;
     border-radius: 20px;
     padding: 60px 40px;
@@ -140,8 +139,7 @@
     height: 100%;
   }
   &__included-list {
-    width: 360px;
-    height: auto;
+    height: 100%;
     background: #ffffff;
     border-radius: 20px;
     padding: 30px 10px 30px 30px;

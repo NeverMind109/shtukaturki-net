@@ -1,19 +1,10 @@
 .consult {
-  &__wrapper {
-    margin: 0;
-  }
-  &__information {
-    padding-left: 0;
-  }
   &__title {
-    width: 500px;
-    padding-bottom: 20px;
+    width: auto;
+    margin-bottom: 20px;
   }
   &__text {
-    width: 550px;
-  }
-  &__form {
-    padding-right: 0;
+    width: auto;
   }
   &__input {
     width: 100%;

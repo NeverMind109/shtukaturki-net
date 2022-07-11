@@ -32,7 +32,11 @@
               >+7 (499) 647-63-47</span
             >
           </a>
-          <button class="mobile-button d-xl-none d-block" type="button">
+          <button
+            class="mobile-button d-xl-none d-block"
+            type="button"
+            aria-label="Кнопка мобильного меню"
+          >
             <span class="mobile-button__line"></span>
             <span class="mobile-button__line"></span>
           </button>
@@ -94,7 +98,7 @@
     <main class="content">
       <section class="contacts">
         <div class="container">
-          <div class="contacts__information col-lg-6 col-12">
+          <div class="contacts__information">
             <h2 class="section-title contacts__title">Контакты</h2>
             <p class="section-text contacts__text">
               По всем вопросам обращайтесь по нашим контактным данным
@@ -128,22 +132,7 @@
             </ul>
           </div>
         </div>
-        <div class="contacts__map">
-          <img
-            class="map__img d-flex d-sm-none"
-            src="images/map-img-mobile.jpg"
-            alt=""
-            width="414"
-            height="300"
-          />
-          <img
-            class="map__img d-none d-sm-flex"
-            src="images/map-img.jpg"
-            alt=""
-            width="1440"
-            height="664"
-          />
-        </div>
+        <div class="contacts__map" id="cityMap"></div>
       </section>
     </main>
     <footer class="footer">
@@ -159,13 +148,28 @@
             </a>
             <ul class="social footer__social d-flex align-items-center">
               <li class="social__item">
-                <a class="social__item-link vkontakte" href="#"></a>
+                <a
+                  class="social__item-link vkontakte"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Вконтакте"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link telegram" href="#"></a>
+                <a
+                  class="social__item-link telegram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Telegram"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link instagram" href="#"></a>
+                <a
+                  class="social__item-link instagram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Instagram"
+                ></a>
               </li>
             </ul>
           </div>
@@ -179,13 +183,28 @@
               class="social footer__social d-none d-md-flex align-items-center"
             >
               <li class="social__item">
-                <a class="social__item-link vkontakte" href="#"></a>
+                <a
+                  class="social__item-link vkontakte"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Вконтакте"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link telegram" href="#"></a>
+                <a
+                  class="social__item-link telegram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Telegram"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link instagram" href="#"></a>
+                <a
+                  class="social__item-link instagram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Instagram"
+                ></a>
               </li>
             </ul>
             <ul class="footer__information-list">
@@ -271,6 +290,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

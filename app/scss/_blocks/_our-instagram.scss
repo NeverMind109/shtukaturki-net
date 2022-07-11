@@ -1,0 +1,21 @@
+.our-instagram {
+  padding: 100px 0;
+  &__information {
+    margin-bottom: 87px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__image {
+    display: block;
+    height: 414px;
+    background-image: url("../images/content/instagram-images.jpg");
+    background-image: image-set(
+      "../images/content/instagram-images.webp" type("image/webp"),
+      "../images/content/instagram-images.jpg" type("image/jpg")
+    );
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+}

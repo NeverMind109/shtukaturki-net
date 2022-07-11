@@ -4,7 +4,7 @@
     margin-bottom: 105px;
   }
   &__title {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   &__tabs-content {
     display: none;
@@ -13,15 +13,16 @@
       flex-direction: column;
     }
   }
-  &__tabs-inner {
-    margin: 0;
+  .col {
+    text-align: center;
+    margin-bottom: 40px;
   }
   &__tabs-card {
-    width: 260px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 10px;
     padding: 0;
-    margin-bottom: 40px;
     &:hover {
       .gallery__tabs-card-text {
         color: #254152;
@@ -33,6 +34,7 @@
     background: #e7f2f9;
   }
   &__tabs-card-img {
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
     margin: 0 auto;
   }
