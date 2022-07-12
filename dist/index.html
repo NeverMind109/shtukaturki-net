@@ -32,7 +32,11 @@
               >+7 (499) 647-63-47</span
             >
           </a>
-          <button class="mobile-button d-xl-none d-block" type="button">
+          <button
+            class="mobile-button d-xl-none d-block"
+            type="button"
+            aria-label="Кнопка мобильного меню"
+          >
             <span class="mobile-button__line"></span>
             <span class="mobile-button__line"></span>
           </button>
@@ -95,13 +99,16 @@
       <section class="hero">
         <div class="hero__slider">
           <a class="hero__slide" href="#">
-            <img
-              class="hero__slide-img"
-              src="images/hero-slider-img.jpg"
-              alt=""
-              width="1300"
-              height="469"
-            />
+            <picture>
+              <source srcset="images/hero-slider-img.webp" type="image/webp" />
+              <img
+                class="hero__slide-img"
+                src="images/hero-slider-img.jpg"
+                width="1300"
+                height="469"
+                alt=""
+              />
+            </picture>
             <div class="hero__slide-wrapper">
               <div class="container">
                 <h3 class="hero__slide-title">
@@ -115,13 +122,16 @@
             </div>
           </a>
           <a class="hero__slide" href="#">
-            <img
-              class="hero__slide-img"
-              src="images/hero-slider-img.jpg"
-              alt=""
-              width="1300"
-              height="469"
-            />
+            <picture>
+              <source srcset="images/hero-slider-img.webp" type="image/webp" />
+              <img
+                class="hero__slide-img"
+                src="images/hero-slider-img.jpg"
+                width="1300"
+                height="469"
+                alt=""
+              />
+            </picture>
             <div class="hero__slide-wrapper">
               <div class="container">
                 <h3 class="hero__slide-title">
@@ -135,13 +145,16 @@
             </div>
           </a>
           <a class="hero__slide" href="#">
-            <img
-              class="hero__slide-img"
-              src="images/hero-slider-img.jpg"
-              alt=""
-              width="1300"
-              height="469"
-            />
+            <picture>
+              <source srcset="images/hero-slider-img.webp" type="image/webp" />
+              <img
+                class="hero__slide-img"
+                src="images/hero-slider-img.jpg"
+                width="1300"
+                height="469"
+                alt=""
+              />
+            </picture>
             <div class="hero__slide-wrapper">
               <div class="container">
                 <h3 class="hero__slide-title">
@@ -169,37 +182,37 @@
             <div
               class="row details__columns figures__columns d-flex align-items-start justify-content-between"
             >
-              <div
-                class="details__column figures__column d-flex flex-column col-xl-3 col-md-6 col-12"
-              >
-                <span class="details__value figures__value">177</span>
-                <span class="details__description figures__description"
-                  >Завершенных проектов</span
-                >
+              <div class="col col-xl-3 col-md-6 col-12">
+                <div class="details__column figures__column d-flex flex-column">
+                  <span class="details__value figures__value">177</span>
+                  <span class="details__description figures__description"
+                    >Завершенных проектов</span
+                  >
+                </div>
               </div>
-              <div
-                class="details__column figures__column d-flex flex-column col-xl-3 col-md-6 col-12"
-              >
-                <span class="details__value figures__value">130</span>
-                <span class="details__description figures__description"
-                  >Построенных зданий</span
-                >
+              <div class="col col-xl-3 col-md-6 col-12">
+                <div class="details__column figures__column d-flex flex-column">
+                  <span class="details__value figures__value">130</span>
+                  <span class="details__description figures__description"
+                    >Построенных зданий</span
+                  >
+                </div>
               </div>
-              <div
-                class="details__column figures__column d-flex flex-column col-xl-3 col-md-6 col-12"
-              >
-                <span class="details__value figures__value">6</span>
-                <span class="details__description figures__description"
-                  >Лет надежной работы</span
-                >
+              <div class="col col-xl-3 col-md-6 col-12">
+                <div class="details__column figures__column d-flex flex-column">
+                  <span class="details__value figures__value">6</span>
+                  <span class="details__description figures__description"
+                    >Лет надежной работы</span
+                  >
+                </div>
               </div>
-              <div
-                class="details__column figures__column d-flex flex-column col-xl-3 col-md-6 col-12"
-              >
-                <span class="details__value figures__value">200+</span>
-                <span class="details__description figures__description"
-                  >Сотрудников в компании</span
-                >
+              <div class="col col-xl-3 col-md-6 col-12">
+                <div class="details__column figures__column d-flex flex-column">
+                  <span class="details__value figures__value">200+</span>
+                  <span class="details__description figures__description"
+                    >Сотрудников в компании</span
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -221,75 +234,83 @@
           <div
             class="row details__columns advantages__columns d-flex align-items-start justify-content-between"
           >
-            <div
-              class="details__column advantages__column d-flex flex-column col-xl-3 col-md-6 col-12"
-            >
-              <img
-                class="details__img advantages__img"
-                src="images/advantages-img-1.svg"
-                alt="Выгода во времени"
-                width="76"
-                height="76"
-              />
-              <h4 class="details__heading advantages__heading">
-                Выгода во времени
-              </h4>
-              <span class="details__about advantages__about"
-                >Данная технология намного быстрее, чем традиционные методы
-                штукатурки</span
+            <div class="col col-xl-3 col-md-6 col-12">
+              <div
+                class="details__column advantages__column d-flex flex-column"
               >
+                <img
+                  class="details__img advantages__img"
+                  src="images/advantages-img-1.svg"
+                  alt="Выгода во времени"
+                  width="76"
+                  height="76"
+                />
+                <h3 class="details__heading advantages__heading">
+                  Выгода во времени
+                </h3>
+                <span class="details__about advantages__about"
+                  >Данная технология намного быстрее, чем традиционные методы
+                  штукатурки</span
+                >
+              </div>
             </div>
-            <div
-              class="details__column advantages__column d-flex flex-column col-xl-3 col-md-6 col-12"
-            >
-              <img
-                class="details__img advantages__img"
-                src="images/advantages-img-2.svg"
-                alt="Высокое качество"
-                width="76"
-                height="76"
-              />
-              <h4 class="details__heading advantages__heading">
-                Высокое качество
-              </h4>
-              <span class="details__about advantages__about"
-                >Стены готовы под оклейку обоями и нанесение декоративной
-                штукатурки</span
+            <div class="col col-xl-3 col-md-6 col-12">
+              <div
+                class="details__column advantages__column d-flex flex-column"
               >
+                <img
+                  class="details__img advantages__img"
+                  src="images/advantages-img-2.svg"
+                  alt="Высокое качество"
+                  width="76"
+                  height="76"
+                />
+                <h3 class="details__heading advantages__heading">
+                  Высокое качество
+                </h3>
+                <span class="details__about advantages__about"
+                  >Стены готовы под оклейку обоями и нанесение декоративной
+                  штукатурки</span
+                >
+              </div>
             </div>
-            <div
-              class="details__column advantages__column d-flex flex-column col-xl-3 col-md-6 col-12"
-            >
-              <img
-                class="details__img advantages__img"
-                src="images/advantages-img-3.svg"
-                alt="Низкий бюджет"
-                width="76"
-                height="76"
-              />
-              <h4 class="details__heading advantages__heading">
-                Низкий бюджет
-              </h4>
-              <span class="details__about advantages__about"
-                >Это не только быстро и качествеено, но и значительно
-                дешевле!</span
+            <div class="col col-xl-3 col-md-6 col-12">
+              <div
+                class="details__column advantages__column d-flex flex-column"
               >
+                <img
+                  class="details__img advantages__img"
+                  src="images/advantages-img-3.svg"
+                  alt="Низкий бюджет"
+                  width="76"
+                  height="76"
+                />
+                <h3 class="details__heading advantages__heading">
+                  Низкий бюджет
+                </h3>
+                <span class="details__about advantages__about"
+                  >Это не только быстро и качествеено, но и значительно
+                  дешевле!</span
+                >
+              </div>
             </div>
-            <div
-              class="details__column advantages__column d-flex flex-column col-xl-3 col-md-6 col-12"
-            >
-              <img
-                class="details__img advantages__img"
-                src="images/advantages-img-4.svg"
-                alt="Результат"
-                width="76"
-                height="76"
-              />
-              <h4 class="details__heading advantages__heading">Результат</h4>
-              <span class="details__about advantages__about"
-                >Все работы проводятся с высокой точностью и позволяют получить
-                наилучший результат</span
+            <div class="col col-xl-3 col-md-6 col-12">
+              <div
+                class="details__column advantages__column d-flex flex-column"
               >
+                <img
+                  class="details__img advantages__img"
+                  src="images/advantages-img-4.svg"
+                  alt="Результат"
+                  width="76"
+                  height="76"
+                />
+                <h3 class="details__heading advantages__heading">Результат</h3>
+                <span class="details__about advantages__about"
+                  >Все работы проводятся с высокой точностью и позволяют
+                  получить наилучший результат</span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -308,25 +329,28 @@
           <div
             class="row video-review__wrapper d-flex flex-lg-row flex-column align-items-start justify-content-between"
           >
-            <iframe
-              class="video-review__video col-lg-8 col-12"
-              width="760"
-              height="426"
-              src="https://www.youtube.com/embed/jwWhxlAC1JI"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <div class="video-review__description col-lg-4 col-12">
-              <h3 class="video-review__heading">
-                Видео обзор штукатурных работ механизированным способом
-              </h3>
-              <p class="video-review__about">
-                В этом видео показан краткий обзор проведения штукатурных работ
-                механизированным способом с использованием современного
-                оборудования и высококачественных материалов
-              </p>
-              <a class="link video-review__link" href="#">Подробнее</a>
+            <div class="col-lg-8 col-12">
+              <iframe
+                class="video-review__video"
+                height="426"
+                src="https://www.youtube.com/embed/jwWhxlAC1JI"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="video-review__description">
+                <h3 class="video-review__heading">
+                  Видео обзор штукатурных работ механизированным способом
+                </h3>
+                <p class="video-review__about">
+                  В этом видео показан краткий обзор проведения штукатурных
+                  работ механизированным способом с использованием современного
+                  оборудования и высококачественных материалов
+                </p>
+                <a class="link video-review__link" href="#">Подробнее</a>
+              </div>
             </div>
           </div>
         </div>
@@ -343,22 +367,143 @@
             </p>
           </div>
           <div class="row row-cols-1 row-cols-lg-3 comparison__cards">
-            <div class="card comparison__card">
-              <div class="card-body comparison__body">
-                <img
-                  class="comparison__img"
-                  src="images/comparison-img-1.svg"
-                  alt="СНиП “Простая” штукатурка"
-                  width="300"
-                  height="300"
-                />
-                <h4 class="comparison__heading">СНиП “Простая” штукатурка</h4>
+            <div class="col">
+              <div class="card comparison__card">
+                <div class="card-body comparison__body">
+                  <img
+                    class="comparison__img"
+                    src="images/comparison-img-1.svg"
+                    loading="lazy"
+                    alt="СНиП “Простая” штукатурка"
+                    width="300"
+                    height="300"
+                  />
+                  <h3 class="comparison__heading">СНиП “Простая” штукатурка</h3>
+                </div>
+                <div class="card-footer comparison__footer">
+                  <span class="comparison__price">от 250 ₽/м2</span>
+                </div>
+                <ul
+                  class="comparison__included-list d-flex d-lg-none flex-column align-items-start"
+                >
+                  <li class="comparison__included-item">Грунтование стен</li>
+                  <li class="comparison__included-item">
+                    Нанесение штукатурной смеси
+                  </li>
+                  <li class="comparison__included-item">
+                    Выравнивание штукатурки под правило
+                  </li>
+                  <li class="comparison__included-item">
+                    <a class="link comparison__included-link" href="#"
+                      >Подробнее</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div class="card-footer comparison__footer">
-                <span class="comparison__price">от 250 ₽/м2</span>
+            </div>
+            <div class="col">
+              <div class="card comparison__card">
+                <div class="card-body comparison__body">
+                  <img
+                    class="comparison__img"
+                    src="images/comparison-img-2.svg"
+                    loading="lazy"
+                    alt="СНиП “Улучшенная” штукатурка"
+                    width="300"
+                    height="300"
+                  />
+                  <h3 class="comparison__heading">
+                    СНиП “Улучшенная” штукатурка
+                  </h3>
+                </div>
+                <div class="card-footer comparison__footer">
+                  <span class="comparison__price">от 300 ₽/м2</span>
+                </div>
+                <ul
+                  class="comparison__included-list d-flex d-lg-none flex-column align-items-start"
+                >
+                  <li class="comparison__included-item">Грунтование стен</li>
+                  <li class="comparison__included-item">
+                    Установка штукатурных маяков
+                  </li>
+                  <li class="comparison__included-item">
+                    Нанесение штукатурной смеси
+                  </li>
+                  <li class="comparison__included-item">
+                    Удаление штукатурных маяков
+                  </li>
+                  <li class="comparison__included-item">
+                    Выравнивание штукатурки под правило
+                  </li>
+                  <li class="comparison__included-item">
+                    <a class="link comparison__included-link" href="#"
+                      >Подробнее</a
+                    >
+                  </li>
+                </ul>
               </div>
+            </div>
+            <div class="col">
+              <div class="card comparison__card">
+                <div class="card-body comparison__body">
+                  <img
+                    class="comparison__img"
+                    src="images/comparison-img-3.svg"
+                    alt="СНиП “Высококачественная” штукатурка"
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                  />
+                  <h3 class="comparison__heading">
+                    СНиП “Высококачественная” штукатурка
+                  </h3>
+                </div>
+                <div class="card-footer comparison__footer">
+                  <span class="comparison__price">от 350 ₽/м2</span>
+                </div>
+                <ul
+                  class="comparison__included-list d-flex d-lg-none flex-column align-items-start"
+                >
+                  <li class="comparison__included-item">Грунтование стен</li>
+                  <li class="comparison__included-item">
+                    Монтаж сетки в местах разнородных материалов
+                  </li>
+                  <li class="comparison__included-item">
+                    Установка штукатурных маяков
+                  </li>
+                  <li class="comparison__included-item">
+                    Нанесение штукатурной смеси
+                  </li>
+                  <li class="comparison__included-item">
+                    Удаление штукатурных маяков
+                  </li>
+                  <li class="comparison__included-item">
+                    Выравнивание штукатурки под правило
+                  </li>
+                  <li class="comparison__included-item">
+                    Глянцевание поверхности
+                  </li>
+                  <li class="comparison__included-item">
+                    Заглаживание поверхности (шпатлевание)
+                  </li>
+                  <li class="comparison__included-item">
+                    <a class="link comparison__included-link" href="#"
+                      >Подробнее</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h4 class="comparison__included-title d-none d-lg-flex col-12">
+            Что входит в стоимость штукатурных работ?
+          </h4>
+          <div
+            class="row comparison__included d-none d-lg-flex justify-content-between"
+          >
+            <div class="col-4">
               <ul
-                class="comparison__included-list d-flex d-lg-none flex-column align-items-start"
+                class="comparison__included-list d-flex flex-column align-items-start"
               >
                 <li class="comparison__included-item">Грунтование стен</li>
                 <li class="comparison__included-item">
@@ -374,24 +519,9 @@
                 </li>
               </ul>
             </div>
-            <div class="card comparison__card">
-              <div class="card-body comparison__body">
-                <img
-                  class="comparison__img"
-                  src="images/comparison-img-2.svg"
-                  alt="СНиП “Улучшенная” штукатурка"
-                  width="300"
-                  height="300"
-                />
-                <h4 class="comparison__heading">
-                  СНиП “Улучшенная” штукатурка
-                </h4>
-              </div>
-              <div class="card-footer comparison__footer">
-                <span class="comparison__price">от 300 ₽/м2</span>
-              </div>
+            <div class="col-4">
               <ul
-                class="comparison__included-list d-flex d-lg-none flex-column align-items-start"
+                class="comparison__included-list d-flex flex-column align-items-start"
               >
                 <li class="comparison__included-item">Грунтование стен</li>
                 <li class="comparison__included-item">
@@ -413,24 +543,9 @@
                 </li>
               </ul>
             </div>
-            <div class="card comparison__card">
-              <div class="card-body comparison__body">
-                <img
-                  class="comparison__img"
-                  src="images/comparison-img-3.svg"
-                  alt="СНиП “Высококачественная” штукатурка"
-                  width="300"
-                  height="300"
-                />
-                <h4 class="comparison__heading">
-                  СНиП “Высококачественная” штукатурка
-                </h4>
-              </div>
-              <div class="card-footer comparison__footer">
-                <span class="comparison__price">от 350 ₽/м2</span>
-              </div>
+            <div class="col-4">
               <ul
-                class="comparison__included-list d-flex d-lg-none flex-column align-items-start"
+                class="comparison__included-list d-flex flex-column align-items-start"
               >
                 <li class="comparison__included-item">Грунтование стен</li>
                 <li class="comparison__included-item">
@@ -462,74 +577,6 @@
               </ul>
             </div>
           </div>
-          <h3 class="comparison__included-title d-none d-lg-flex col-12">
-            Что входит в стоимость штукатурных работ?
-          </h3>
-          <div
-            class="row comparison__included d-none d-lg-flex justify-content-between"
-          >
-            <ul
-              class="comparison__included-list d-flex flex-column align-items-start col-4"
-            >
-              <li class="comparison__included-item">Грунтование стен</li>
-              <li class="comparison__included-item">
-                Нанесение штукатурной смеси
-              </li>
-              <li class="comparison__included-item">
-                Выравнивание штукатурки под правило
-              </li>
-              <li class="comparison__included-item">
-                <a class="link comparison__included-link" href="#">Подробнее</a>
-              </li>
-            </ul>
-            <ul
-              class="comparison__included-list d-flex flex-column align-items-start col-4"
-            >
-              <li class="comparison__included-item">Грунтование стен</li>
-              <li class="comparison__included-item">
-                Установка штукатурных маяков
-              </li>
-              <li class="comparison__included-item">
-                Нанесение штукатурной смеси
-              </li>
-              <li class="comparison__included-item">
-                Удаление штукатурных маяков
-              </li>
-              <li class="comparison__included-item">
-                Выравнивание штукатурки под правило
-              </li>
-              <li class="comparison__included-item">
-                <a class="link comparison__included-link" href="#">Подробнее</a>
-              </li>
-            </ul>
-            <ul
-              class="comparison__included-list d-flex flex-column align-items-start col-4"
-            >
-              <li class="comparison__included-item">Грунтование стен</li>
-              <li class="comparison__included-item">
-                Монтаж сетки в местах разнородных материалов
-              </li>
-              <li class="comparison__included-item">
-                Установка штукатурных маяков
-              </li>
-              <li class="comparison__included-item">
-                Нанесение штукатурной смеси
-              </li>
-              <li class="comparison__included-item">
-                Удаление штукатурных маяков
-              </li>
-              <li class="comparison__included-item">
-                Выравнивание штукатурки под правило
-              </li>
-              <li class="comparison__included-item">Глянцевание поверхности</li>
-              <li class="comparison__included-item">
-                Заглаживание поверхности (шпатлевание)
-              </li>
-              <li class="comparison__included-item">
-                <a class="link comparison__included-link" href="#">Подробнее</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
       <section class="examples">
@@ -547,254 +594,450 @@
               data-src="images/content/gallery-img-1.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-1.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-1.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-2.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-2.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-2.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-3.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-3.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-3.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-4.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-4.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-4.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-4.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-5.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-5.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-5.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-5.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-6.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-6.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-6.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-6.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-7.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-7.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-7.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-7.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-8.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-8.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-8.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-8.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-9.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-9.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-9.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-9.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-10.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-10.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-10.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-10.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-11.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-11.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-11.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-11.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-12.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-12.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-12.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-12.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-13.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-13.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-13.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-13.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div
               class="carousel__slide examples__main-slide"
               data-src="images/content/gallery-img-14.jpg"
               data-fancybox="gallery"
             >
-              <img
-                class="examples__main-img"
-                src="images/content/gallery-img-14.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-14.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__main-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-14.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
           </div>
           <div class="carousel examples__thumb" id="thumbCarousel">
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-1.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-1.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-2.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-2.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-3.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-3.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-4.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-4.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-4.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-5.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-5.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-5.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-6.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-6.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-6.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-7.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-7.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-7.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-8.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-8.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-8.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-9.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-9.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-9.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-10.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-10.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-10.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-11.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-11.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-11.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-12.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-12.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-12.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-13.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-13.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-13.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="carousel__slide examples__thumb-slide">
-              <img
-                class="examples__thumb-img"
-                src="images/content/gallery-img-14.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="images/content/gallery-img-14.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="examples__thumb-img"
+                  loading="lazy"
+                  src="images/content/gallery-img-14.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -802,40 +1045,44 @@
       <section class="colored-section consult">
         <div class="container">
           <div class="row consult__wrapper flex-column flex-lg-row">
-            <div class="consult__information col-lg-6 col-12">
-              <h2 class="section-title consult__title">
-                Получи бесплатную консультацию
-              </h2>
-              <p class="section-text consult__text">
-                Просто оставьте свои контактные данные и наши специалисты
-                проконсультируют вас по любому вопросу
-              </p>
+            <div class="col-lg-6 col-12">
+              <div class="consult__information">
+                <h2 class="section-title consult__title">
+                  Получи бесплатную консультацию
+                </h2>
+                <p class="section-text consult__text">
+                  Просто оставьте свои контактные данные и наши специалисты
+                  проконсультируют вас по любому вопросу
+                </p>
+              </div>
             </div>
-            <form
-              class="consult__form d-flex flex-column align-items-start col-lg-6 col-12"
-              action="#"
-            >
-              <input
-                class="consult__input consult__name"
-                type="text"
-                placeholder="Ваше имя"
-                required
-              />
-              <input
-                class="consult__input consult__phone"
-                type="tel"
-                placeholder="+7 (999) 999 99 99"
-                required
-              />
-              <button class="consult__btn" type="submit">Отправить</button>
-              <span class="consult__notice-text"
-                >Отправляя заявку вы даете согласие на<a
-                  href="#"
-                  class="consult__notice-link"
-                  >обработку своих персональных данных</a
-                ></span
+            <div class="col-lg-6 col-12">
+              <form
+                class="consult__form d-flex flex-column align-items-start"
+                action="#"
               >
-            </form>
+                <input
+                  class="consult__input consult__name"
+                  type="text"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  class="consult__input consult__phone"
+                  type="tel"
+                  placeholder="+7 (999) 999 99 99"
+                  required
+                />
+                <button class="consult__btn" type="submit">Отправить</button>
+                <span class="consult__notice-text"
+                  >Отправляя заявку вы даете согласие на<a
+                    href="#"
+                    class="consult__notice-link"
+                    >обработку своих персональных данных</a
+                  ></span
+                >
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -853,13 +1100,20 @@
           <div class="materials__slider">
             <div class="materials__slide">
               <div class="card materials__card">
-                <img
-                  class="materials__img"
-                  src="images/content/shtukaturka-img.png"
-                  alt="Shtukaturka Image"
-                  width="220"
-                  height="220"
-                />
+                <picture>
+                  <source
+                    srcset="images/content/shtukaturka-img.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="materials__img"
+                    loading="lazy"
+                    src="images/content/shtukaturka-img.png"
+                    alt="Изображение штукатурки"
+                    width="220"
+                    height="220"
+                  />
+                </picture>
                 <div class="card-body materials__body">
                   <h3 class="materials__heading">Штукатурка</h3>
                   <p class="materials__description">
@@ -873,13 +1127,20 @@
             </div>
             <div class="materials__slide">
               <div class="card materials__card">
-                <img
-                  class="materials__img"
-                  src="images/content/shtukaturka-img.png"
-                  alt="Shtukaturka Image"
-                  width="220"
-                  height="220"
-                />
+                <picture>
+                  <source
+                    srcset="images/content/shtukaturka-img.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="materials__img"
+                    loading="lazy"
+                    src="images/content/shtukaturka-img.png"
+                    alt="Изображение штукатурки"
+                    width="220"
+                    height="220"
+                  />
+                </picture>
                 <div class="card-body materials__body">
                   <h3 class="materials__heading">Штукатурка</h3>
                   <p class="materials__description">
@@ -893,13 +1154,20 @@
             </div>
             <div class="materials__slide">
               <div class="card materials__card">
-                <img
-                  class="materials__img"
-                  src="images/content/shtukaturka-img.png"
-                  alt="Shtukaturka Image"
-                  width="220"
-                  height="220"
-                />
+                <picture>
+                  <source
+                    srcset="images/content/shtukaturka-img.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="materials__img"
+                    loading="lazy"
+                    src="images/content/shtukaturka-img.png"
+                    alt="Изображение штукатурки"
+                    width="220"
+                    height="220"
+                  />
+                </picture>
                 <div class="card-body materials__body">
                   <h3 class="materials__heading">Штукатурка</h3>
                   <p class="materials__description">
@@ -913,13 +1181,20 @@
             </div>
             <div class="materials__slide">
               <div class="card materials__card">
-                <img
-                  class="materials__img"
-                  src="images/content/shtukaturka-img.png"
-                  alt="Shtukaturka Image"
-                  width="220"
-                  height="220"
-                />
+                <picture>
+                  <source
+                    srcset="images/content/shtukaturka-img.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="materials__img"
+                    loading="lazy"
+                    src="images/content/shtukaturka-img.png"
+                    alt="Изображение штукатурки"
+                    width="220"
+                    height="220"
+                  />
+                </picture>
                 <div class="card-body materials__body">
                   <h3 class="materials__heading">Штукатурка</h3>
                   <p class="materials__description">
@@ -933,13 +1208,20 @@
             </div>
             <div class="materials__slide">
               <div class="card materials__card">
-                <img
-                  class="materials__img"
-                  src="images/content/shtukaturka-img.png"
-                  alt="Shtukaturka Image"
-                  width="220"
-                  height="220"
-                />
+                <picture>
+                  <source
+                    srcset="images/content/shtukaturka-img.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="materials__img"
+                    loading="lazy"
+                    src="images/content/shtukaturka-img.png"
+                    alt="Изображение штукатурки"
+                    width="220"
+                    height="220"
+                  />
+                </picture>
                 <div class="card-body materials__body">
                   <h3 class="materials__heading">Штукатурка</h3>
                   <p class="materials__description">
@@ -953,13 +1235,20 @@
             </div>
             <div class="materials__slide">
               <div class="card materials__card">
-                <img
-                  class="materials__img"
-                  src="images/content/shtukaturka-img.png"
-                  alt="Shtukaturka Image"
-                  width="220"
-                  height="220"
-                />
+                <picture>
+                  <source
+                    srcset="images/content/shtukaturka-img.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="materials__img"
+                    loading="lazy"
+                    src="images/content/shtukaturka-img.png"
+                    alt="Изображение штукатурки"
+                    width="220"
+                    height="220"
+                  />
+                </picture>
                 <div class="card-body materials__body">
                   <h3 class="materials__heading">Штукатурка</h3>
                   <p class="materials__description">
@@ -986,101 +1275,157 @@
             </p>
           </div>
           <ul class="row process__steps d-flex justify-content-center">
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-1.jpg"
-                alt="Step 1"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-1.jpg"
+                    alt="Шаг 1"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-2.jpg"
-                alt="Step 2"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-2.jpg"
+                    alt="Шаг 2"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-3.jpg"
-                alt="Step 3"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-3.jpg"
+                    alt="Шаг 3"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-4.jpg"
-                alt="Step 4"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-4.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-4.jpg"
+                    alt="Шаг 4"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-5.jpg"
-                alt="Step 5"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-5.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-5.jpg"
+                    alt="Шаг 5"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-6.jpg"
-                alt="Step 6"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-6.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-6.jpg"
+                    alt="Шаг 6"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-7.jpg"
-                alt="Step 7"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-7.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-7.jpg"
+                    alt="Шаг 7"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
-            <li
-              class="process__step d-flex flex-column col-12 col-md-6 col-lg-2"
-            >
-              <img
-                class="process__img"
-                src="images/content/process-step-8.jpg"
-                alt="Step 8"
-                width="260"
-                height="260"
-              />
-              <p class="process__heading">СНиП “Простая” штукатурка</p>
+            <li class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="process__step d-flex flex-column">
+                <picture>
+                  <source
+                    srcset="images/content/process-step-8.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="process__img"
+                    loading="lazy"
+                    src="images/content/process-step-8.jpg"
+                    alt="Шаг 8"
+                    width="260"
+                    height="260"
+                  />
+                </picture>
+                <p class="process__heading">СНиП “Простая” штукатурка</p>
+              </div>
             </li>
           </ul>
           <div
@@ -1099,12 +1444,13 @@
               способом
             </p>
           </div>
-          <ul class="route__list d-flex">
+          <ul class="route__list d-flex justify-content-center">
             <li class="route__item">
               <div class="route__item-wrapper">
                 <img
                   class="route__item-img"
                   src="images/route-step-1.svg"
+                  loading="lazy"
                   alt=""
                   width="76"
                   height="76"
@@ -1119,6 +1465,7 @@
                 <img
                   class="route__item-img"
                   src="images/route-step-2.svg"
+                  loading="lazy"
                   alt=""
                   width="76"
                   height="76"
@@ -1133,6 +1480,7 @@
                 <img
                   class="route__item-img"
                   src="images/route-step-3.svg"
+                  loading="lazy"
                   alt=""
                   width="76"
                   height="76"
@@ -1147,6 +1495,7 @@
                 <img
                   class="route__item-img"
                   src="images/route-step-4.svg"
+                  loading="lazy"
                   alt=""
                   width="76"
                   height="76"
@@ -1161,6 +1510,7 @@
                 <img
                   class="route__item-img"
                   src="images/route-step-5.svg"
+                  loading="lazy"
                   alt=""
                   width="76"
                   height="76"
@@ -1182,7 +1532,12 @@
               штукатурки
             </p>
           </div>
-          <a class="our-instagram__image" href="#"> </a>
+          <a
+            class="our-instagram__image"
+            href="#"
+            aria-label="Перейти в наш Instagram"
+            target="_blank"
+          ></a>
         </div>
       </section>
       <section class="equipment">
@@ -1197,57 +1552,86 @@
           <div
             class="row-cols-1 row-cols-lg-3 equipment__list d-flex flex-wrap justify-content-between"
           >
-            <div
-              class="equipment__item d-flex flex-column justify-content-between"
-            >
-              <div class="equipment__body">
-                <img
-                  class="equipment__img"
-                  src="images/content/equipment-img-1.png"
-                  alt="Штукатурная станция PFT G4"
-                  width="360"
-                  height="360"
-                />
-                <h4 class="equipment__heading">Штукатурная станция PFT G4</h4>
-              </div>
-              <div class="equipment__footer">
-                <a class="link equipment__link" href="#">Подробнее</a>
-              </div>
-            </div>
-            <div
-              class="equipment__item d-flex flex-column justify-content-between"
-            >
-              <div class="equipment__body">
-                <img
-                  class="equipment__img"
-                  src="images/content/equipment-img-2.png"
-                  alt="Штукатурная станция KALETA 5"
-                  width="360"
-                  height="360"
-                />
-                <h4 class="equipment__heading">Штукатурная станция KALETA 5</h4>
-              </div>
-              <div class="equipment__footer">
-                <a class="link equipment__link" href="#">Подробнее</a>
+            <div class="col">
+              <div
+                class="equipment__item d-flex flex-column justify-content-between"
+              >
+                <div class="equipment__body">
+                  <picture>
+                    <source
+                      srcset="images/content/equipment-img-1.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="equipment__img"
+                      loading="lazy"
+                      src="images/content/equipment-img-1.png"
+                      alt="Штукатурная станция PFT G4"
+                      width="360"
+                      height="360"
+                    />
+                  </picture>
+                  <h3 class="equipment__heading">Штукатурная станция PFT G4</h3>
+                </div>
+                <div class="equipment__footer">
+                  <a class="link equipment__link" href="#">Подробнее</a>
+                </div>
               </div>
             </div>
-            <div
-              class="equipment__item d-flex flex-column justify-content-between"
-            >
-              <div class="equipment__body">
-                <img
-                  class="equipment__img"
-                  src="images/content/equipment-img-3.png"
-                  alt="Штукатурная станция PFT RITMO XL"
-                  width="360"
-                  height="360"
-                />
-                <h4 class="equipment__heading">
-                  Штукатурная станция PFT RITMO XL
-                </h4>
+            <div class="col">
+              <div
+                class="equipment__item d-flex flex-column justify-content-between"
+              >
+                <div class="equipment__body">
+                  <picture>
+                    <source
+                      srcset="images/content/equipment-img-2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="equipment__img"
+                      loading="lazy"
+                      src="images/content/equipment-img-2.png"
+                      alt="Штукатурная станция KALETA 5"
+                      width="360"
+                      height="360"
+                    />
+                  </picture>
+                  <h3 class="equipment__heading">
+                    Штукатурная станция KALETA 5
+                  </h3>
+                </div>
+                <div class="equipment__footer">
+                  <a class="link equipment__link" href="#">Подробнее</a>
+                </div>
               </div>
-              <div class="equipment__footer">
-                <a class="link equipment__link" href="#">Подробнее</a>
+            </div>
+            <div class="col">
+              <div
+                class="equipment__item d-flex flex-column justify-content-between"
+              >
+                <div class="equipment__body">
+                  <picture>
+                    <source
+                      srcset="images/content/equipment-img-3.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="equipment__img"
+                      loading="lazy"
+                      src="images/content/equipment-img-3.png"
+                      alt="Штукатурная станция PFT RITMO XL"
+                      width="360"
+                      height="360"
+                    />
+                  </picture>
+                  <h3 class="equipment__heading">
+                    Штукатурная станция PFT RITMO XL
+                  </h3>
+                </div>
+                <div class="equipment__footer">
+                  <a class="link equipment__link" href="#">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
@@ -1267,135 +1651,151 @@
           <div
             class="row calculator__wrapper d-flex flex-column flex-lg-row align-items-start justify-content-between"
           >
-            <div class="calculator__calculate col-8">
-              <div
-                class="calculator__line calculator__area d-flex flex-column flex-md-row"
-              >
-                <div class="calculator__input">
-                  <span class="calculator__heading">Площадь стен</span>
-                  <input
-                    class="js-range-slider calculator__range"
-                    type="text"
-                    data-from="1400"
-                    data-min="200"
-                    data-max="3000"
-                    oninput="squareRange.innerText = this.value"
-                  />
-                </div>
-                <div class="calculator__value">
-                  <span class="calculator__value-text"
-                    ><span class="calculator__value-figure" id="squareRange"
-                      >1400</span
-                    >м2</span
-                  >
-                </div>
-              </div>
-              <div
-                class="calculator__line calculator__thickness d-flex flex-column flex-md-row"
-              >
-                <div class="calculator__input">
-                  <span class="calculator__heading">Толщина слоя</span>
-                  <input
-                    class="js-range-slider calculator__range"
-                    type="text"
-                    data-from="24"
-                    data-min="10"
-                    data-max="30"
-                    oninput="thicknessRange.innerText = this.value"
-                  />
-                </div>
-                <div class="calculator__value">
-                  <span class="calculator__value-text"
-                    ><span class="calculator__value-figure" id="thicknessRange"
-                      >24</span
-                    >мм</span
-                  >
-                </div>
-              </div>
-              <div class="calculator__checkbox">
-                <label class="calculator__label" for="materials-checkbox"
-                  ><input
-                    class="input-styled calculator__checkbox-input"
-                    type="checkbox"
-                    id="materials-checkbox"
-                    checked
-                  />Включить стоимость материалов</label
+            <div class="col-12 col-lg-8">
+              <div class="calculator__calculate">
+                <div
+                  class="calculator__line calculator__area d-flex flex-column flex-md-row"
                 >
+                  <div class="calculator__input">
+                    <span class="calculator__heading">Площадь стен</span>
+                    <input
+                      class="js-range-slider calculator__range"
+                      type="text"
+                      id="wallSquare"
+                      data-from="1400"
+                      data-min="200"
+                      data-max="3000"
+                      oninput="getSquare()"
+                      aria-label="Ползунок для указания площади стен"
+                    />
+                  </div>
+                  <div class="calculator__value">
+                    <span class="calculator__value-text"
+                      ><span class="calculator__value-figure" id="squareRange"
+                        >1400</span
+                      >м2</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="calculator__line calculator__thickness d-flex flex-column flex-md-row"
+                >
+                  <div class="calculator__input">
+                    <span class="calculator__heading">Толщина слоя</span>
+                    <input
+                      class="js-range-slider calculator__range"
+                      type="text"
+                      data-from="24"
+                      data-min="10"
+                      data-max="30"
+                      oninput="thicknessRange.innerText = this.value"
+                      aria-label="Ползунок для указания толщины слоя"
+                    />
+                  </div>
+                  <div class="calculator__value">
+                    <span class="calculator__value-text"
+                      ><span
+                        class="calculator__value-figure"
+                        id="thicknessRange"
+                        >24</span
+                      >мм</span
+                    >
+                  </div>
+                </div>
+                <div class="calculator__checkbox">
+                  <label class="calculator__label" for="materials-checkbox"
+                    ><input
+                      class="input-styled calculator__checkbox-input"
+                      type="checkbox"
+                      id="materials-checkbox"
+                      checked
+                    />Включить стоимость материалов</label
+                  >
+                </div>
               </div>
             </div>
-            <form
-              class="calculator__result d-flex flex-column col-4"
-              action="#"
-            >
-              <h4 class="calculator__result-heading">
-                Предварительная стоимость
-              </h4>
-              <div
-                class="calculator__result-body d-flex flex-column align-items-center"
-              >
-                <span class="calculator__result-description"
-                  >За квадратный метр</span
+            <div class="col-12 col-lg-4">
+              <form class="calculator__result d-flex flex-column" action="#">
+                <h3 class="calculator__result-heading">
+                  Предварительная стоимость
+                </h3>
+                <div
+                  class="calculator__result-body d-flex flex-column align-items-center"
                 >
-                <span class="calculator__result-price">650 руб.</span>
-                <span class="calculator__result-description"
-                  >Общая стоимость работ</span
+                  <span class="calculator__result-description"
+                    >За квадратный метр</span
+                  >
+                  <span class="calculator__result-price">650 руб.</span>
+                  <span class="calculator__result-description"
+                    >Общая стоимость работ</span
+                  >
+                  <span class="calculator__result-price" id="totalPrice"
+                    >130 000 руб.</span
+                  >
+                  <button class="calculator__result-btn" type="submit">
+                    Оставить заявку
+                  </button>
+                </div>
+                <span class="calculator__result-text"
+                  >После отправки формы с Вами свяжется наш менеджер и озвучит
+                  итоговую стоимость.</span
                 >
-                <span class="calculator__result-price">130 000 руб.</span>
-                <button class="calculator__result-btn" type="submit">
-                  Оставить заявку
-                </button>
-              </div>
-              <span class="calculator__result-text"
-                >После отправки формы с Вами свяжется наш менеджер и озвучит
-                итоговую стоимость.</span
-              >
-            </form>
+              </form>
+            </div>
           </div>
-          <h3 class="calculator__included-title">
+          <h4 class="calculator__included-title">
             В стоимость включено абсолютно все!
-          </h3>
+          </h4>
           <div
             class="row calculator__included-wrapper d-flex flex-column flex-lg-row align-items-center align-items-lg-stretch justify-content-lg-between justify-content-center"
           >
-            <ul class="calculator__included-list col-12 col-xl-4">
-              <li class="calculator__included-item">
-                <span class="calculator__included-heading-first"
-                  >Материалы</span
+            <div class="col col-12 col-xl-4">
+              <ul class="calculator__included-list">
+                <li class="calculator__included-item">
+                  <span class="calculator__included-heading-first"
+                    >Материалы</span
+                  >
+                </li>
+                <li class="calculator__included-item">Гипсовая штукатурка</li>
+                <li class="calculator__included-item">
+                  Цементатная штукатурка
+                </li>
+                <li class="calculator__included-item">Акриловый грунт</li>
+                <li class="calculator__included-item">Бетоноконтакт</li>
+                <li class="calculator__included-item">Штукатурная сетка</li>
+                <li class="calculator__included-item">Грунт по металлу</li>
+                <li class="calculator__included-item">Штукатурные маяки</li>
+                <li class="calculator__included-item">Углозащищенные маяки</li>
+              </ul>
+            </div>
+            <div class="col col-12 col-xl-4">
+              <ul class="calculator__included-list">
+                <li class="calculator__included-item">
+                  <span class="calculator__included-heading-second"
+                    >Материалы</span
+                  >
+                </li>
+                <li class="calculator__included-item">Доставка материалов</li>
+                <li class="calculator__included-item">Разгрузка материалов</li>
+                <li class="calculator__included-item">Грунтование стен</li>
+                <li class="calculator__included-item">Монтаж сетки</li>
+                <li class="calculator__included-item">Установка маяков</li>
+                <li class="calculator__included-item">Штукатурка стен</li>
+                <li class="calculator__included-item">Глянцевание стен</li>
+                <li class="calculator__included-item">Шпатлевание стен</li>
+                <li class="calculator__included-item">Уборка помещения</li>
+                <li class="calculator__included-item">
+                  Загрузка строительного мусора
+                </li>
+              </ul>
+            </div>
+            <div class="col col-12 col-xl-4">
+              <div class="calculator__included-list">
+                <span class="calculator__included-description"
+                  >В стоимость работы с учётом материалов включены все расходы
+                  на проведение штукатурных работ</span
                 >
-              </li>
-              <li class="calculator__included-item">Гипсовая штукатурка</li>
-              <li class="calculator__included-item">Цементатная штукатурка</li>
-              <li class="calculator__included-item">Акриловый грунт</li>
-              <li class="calculator__included-item">Бетоноконтакт</li>
-              <li class="calculator__included-item">Штукатурная сетка</li>
-              <li class="calculator__included-item">Грунт по металлу</li>
-              <li class="calculator__included-item">Штукатурные маяки</li>
-              <li class="calculator__included-item">Углозащищенные маяки</li>
-            </ul>
-            <ul class="calculator__included-list col-12 col-xl-4">
-              <li class="calculator__included-item">
-                <span class="calculator__included-heading-second"
-                  >Материалы</span
-                >
-              </li>
-              <li class="calculator__included-item">Доставка материалов</li>
-              <li class="calculator__included-item">Разгрузка материалов</li>
-              <li class="calculator__included-item">Грунтование стен</li>
-              <li class="calculator__included-item">Монтаж сетки</li>
-              <li class="calculator__included-item">Установка маяков</li>
-              <li class="calculator__included-item">Штукатурка стен</li>
-              <li class="calculator__included-item">Глянцевание стен</li>
-              <li class="calculator__included-item">Шпатлевание стен</li>
-              <li class="calculator__included-item">Уборка помещения</li>
-              <li class="calculator__included-item">
-                Загрузка строительного мусора
-              </li>
-            </ul>
-            <div class="calculator__included-list col-12 col-xl-4">
-              <span class="calculator__included-description"
-                >В стоимость работы с учётом материалов включены все расходы на
-                проведение штукатурных работ</span
-              >
+              </div>
             </div>
           </div>
         </div>
@@ -1412,90 +1812,117 @@
           <div
             class="row articles__wrapper d-flex flex-column flex-lg-row justify-content-between"
           >
-            <div
-              class="articles__card d-flex flex-column flex-md-row flex-lg-column col-12 col-lg-4"
-            >
-              <img
-                class="articles__img"
-                src="images/content/articles-img-1.jpg"
-                alt="Article Image"
-                width="360"
-                height="260"
-              />
+            <div class="col-12 col-lg-4">
               <div
-                class="articles__inner d-flex flex-column justify-content-between"
+                class="articles__card d-flex flex-column flex-md-row flex-lg-column"
               >
-                <div class="articles__body">
-                  <h4 class="articles__heading">
-                    Экологичиски чистый материал
-                  </h4>
-                  <p class="articles__description">
-                    Мы используем только качественные материалы для
-                    механизированной штукатурки
-                  </p>
-                </div>
-                <div class="articles__footer">
-                  <a class="link articles__link" href="article.html"
-                    >Подробнее</a
-                  >
+                <picture>
+                  <source
+                    srcset="images/content/articles-img-1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="articles__img"
+                    loading="lazy"
+                    src="images/content/articles-img-1.jpg"
+                    alt="Article Image"
+                    width="360"
+                    height="260"
+                  />
+                </picture>
+                <div
+                  class="articles__inner d-flex flex-column justify-content-between"
+                >
+                  <div class="articles__body">
+                    <h3 class="articles__heading">
+                      Экологичиски чистый материал
+                    </h3>
+                    <p class="articles__description">
+                      Мы используем только качественные материалы для
+                      механизированной штукатурки
+                    </p>
+                  </div>
+                  <div class="articles__footer">
+                    <a class="link articles__link" href="article.html"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              class="articles__card d-flex flex-column flex-md-row flex-lg-column col-12 col-lg-4"
-            >
-              <img
-                class="articles__img"
-                src="images/content/articles-img-2.jpg"
-                alt="Article Image"
-                width="360"
-                height="260"
-              />
+            <div class="col-12 col-lg-4">
               <div
-                class="articles__inner d-flex flex-column justify-content-between"
+                class="articles__card d-flex flex-column flex-md-row flex-lg-column"
               >
-                <div class="articles__body">
-                  <h4 class="articles__heading">
-                    Экологичиски чистый материал
-                  </h4>
-                  <p class="articles__description">
-                    Мы используем только качественные материалы для
-                    механизированной штукатурки
-                  </p>
-                </div>
-                <div class="articles__footer">
-                  <a class="link articles__link" href="article.html"
-                    >Подробнее</a
-                  >
+                <picture>
+                  <source
+                    srcset="images/content/articles-img-2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="articles__img"
+                    loading="lazy"
+                    src="images/content/articles-img-2.jpg"
+                    alt="Article Image"
+                    width="360"
+                    height="260"
+                  />
+                </picture>
+                <div
+                  class="articles__inner d-flex flex-column justify-content-between"
+                >
+                  <div class="articles__body">
+                    <h3 class="articles__heading">
+                      Экологичиски чистый материал
+                    </h3>
+                    <p class="articles__description">
+                      Мы используем только качественные материалы для
+                      механизированной штукатурки
+                    </p>
+                  </div>
+                  <div class="articles__footer">
+                    <a class="link articles__link" href="article.html"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              class="articles__card d-flex flex-column flex-md-row flex-lg-column col-12 col-lg-4"
-            >
-              <img
-                class="articles__img"
-                src="images/content/articles-img-3.jpg"
-                alt="Article Image"
-                width="360"
-                height="260"
-              />
+            <div class="col-12 col-lg-4">
               <div
-                class="articles__inner d-flex flex-column justify-content-between"
+                class="articles__card d-flex flex-column flex-md-row flex-lg-column"
               >
-                <div class="articles__body">
-                  <h4 class="articles__heading">
-                    Экологичиски чистый материал
-                  </h4>
-                  <p class="articles__description">
-                    Мы используем только качественные материалы для
-                    механизированной штукатурки
-                  </p>
-                </div>
-                <div class="articles__footer">
-                  <a class="link articles__link" href="article.html"
-                    >Подробнее</a
-                  >
+                <picture>
+                  <source
+                    srcset="images/content/articles-img-3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="articles__img"
+                    loading="lazy"
+                    src="images/content/articles-img-3.jpg"
+                    alt="Article Image"
+                    width="360"
+                    height="260"
+                  />
+                </picture>
+                <div
+                  class="articles__inner d-flex flex-column justify-content-between"
+                >
+                  <div class="articles__body">
+                    <h3 class="articles__heading">
+                      Экологичиски чистый материал
+                    </h3>
+                    <p class="articles__description">
+                      Мы используем только качественные материалы для
+                      механизированной штукатурки
+                    </p>
+                  </div>
+                  <div class="articles__footer">
+                    <a class="link articles__link" href="article.html"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -1516,13 +1943,28 @@
             </a>
             <ul class="social footer__social d-flex align-items-center">
               <li class="social__item">
-                <a class="social__item-link vkontakte" href="#"></a>
+                <a
+                  class="social__item-link vkontakte"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Вконтакте"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link telegram" href="#"></a>
+                <a
+                  class="social__item-link telegram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Telegram"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link instagram" href="#"></a>
+                <a
+                  class="social__item-link instagram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Instagram"
+                ></a>
               </li>
             </ul>
           </div>
@@ -1536,13 +1978,28 @@
               class="social footer__social d-none d-md-flex align-items-center"
             >
               <li class="social__item">
-                <a class="social__item-link vkontakte" href="#"></a>
+                <a
+                  class="social__item-link vkontakte"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Вконтакте"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link telegram" href="#"></a>
+                <a
+                  class="social__item-link telegram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Telegram"
+                ></a>
               </li>
               <li class="social__item">
-                <a class="social__item-link instagram" href="#"></a>
+                <a
+                  class="social__item-link instagram"
+                  href="#"
+                  target="_blank"
+                  aria-label="Наша страничка Instagram"
+                ></a>
               </li>
             </ul>
             <ul class="footer__information-list">
